@@ -1,0 +1,30 @@
+{
+  "storyboard_s": 80.6,
+  "layout_s": 0.0,
+  "panels": {
+    "1": {
+      "gen_s": 53.151,
+      "qc_s": 0,
+      "retries": 0
+    },
+    "3": {
+      "gen_s": 66.429,
+      "qc_s": 0,
+      "retries": 0
+    },
+    "4": {
+      "gen_s": 65.404,
+      "qc_s": 0,
+      "retries": 0
+    },
+    "2": {
+      "gen_s": 70.37,
+      "qc_s": 0,
+      "retries": 0
+    }
+  },
+  "export_s": 3.6,
+  "total_s": 185.9,
+  "images": 4,
+  "vision_calls": 4
+}

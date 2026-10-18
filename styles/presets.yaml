@@ -1,0 +1,18 @@
+anime_cel:
+  name: 日漫赛璐璐
+  positive: "anime style, cel shading, clean lineart, flat colors, vibrant"
+chibi:
+  name: Q 版
+  positive: "chibi style, super deformed, big head small body, cute, simple shading"
+painterly:
+  name: 厚涂
+  positive: "painterly anime illustration, soft brush strokes, rich lighting"
+watercolor:
+  name: 水彩绘本
+  positive: "watercolor picture book illustration, soft edges, paper texture, pastel colors"
+american:
+  name: 美漫
+  positive: "american comic style, bold ink lines, halftone shading"
+pixel:
+  name: 像素风
+  positive: "pixel art, 16-bit, limited palette"

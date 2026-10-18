@@ -1,0 +1,129 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>表情基准 2026-10-16</title><style>
+body{font-family:sans-serif;max-width:1300px;margin:20px auto}
+table{border-collapse:collapse;width:100%}
+td,th{border:1px solid #ccc;padding:6px;font-size:13px;vertical-align:top}
+img{width:260px;display:block}
+tr:nth-child(even){background:#f6f6f6}
+</style></head><body><h1>表情基准 2026-10-16</h1>
+<pre>{
+  "v3": {
+    "panels": 16,
+    "qc_error_count": 0,
+    "expression_na_count": 0,
+    "expression_top1_exact": {
+      "k": 10,
+      "n": 16,
+      "rate": 0.625,
+      "ci95": [
+        0.386,
+        0.815
+      ]
+    },
+    "expression_top2_exact": {
+      "k": 11,
+      "n": 16,
+      "rate": 0.688,
+      "ci95": [
+        0.444,
+        0.858
+      ]
+    },
+    "expression_group_hit": {
+      "k": 13,
+      "n": 16,
+      "rate": 0.812,
+      "ci95": [
+        0.57,
+        0.934
+      ]
+    },
+    "intensity_exact": {
+      "k": 13,
+      "n": 16,
+      "rate": 0.812,
+      "ci95": [
+        0.57,
+        0.934
+      ]
+    },
+    "intensity_mae": 0.188,
+    "intensity_bias": 0.188,
+    "overacted_by_target": {
+      "1": {
+        "k": 3,
+        "n": 16,
+        "rate": 0.188,
+        "ci95": [
+          0.066,
+          0.43
+        ]
+      },
+      "2": {
+        "k": 0,
+        "n": 0,
+        "rate": null,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "3": {
+        "k": 0,
+        "n": 0,
+        "rate": null,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "intensity_confusion": {
+      "rows_target_cols_detected": [
+        [
+          13,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "identity_pass": {
+      "k": 13,
+      "n": 16,
+      "rate": 0.812,
+      "ci95": [
+        0.57,
+        0.934
+      ]
+    }
+  }
+}</pre>
+<table><tr><th>格</th><th>prompt</th><th>图</th><th>判定</th></tr>
+<tr><td>开心/强度1/近景</td><td>v3</td>
+<td><img src="img-2026-10-16-210103/开心_1_近景_v3.png" loading="lazy"></td><td>检测：开心<br>表情✓ 身份✓</td></tr><tr><td>开心/强度1/中景</td><td>v3</td>
+<td><img src="img-2026-10-16-210103/开心_1_中景_v3.png" loading="lazy"></td><td>检测：开心<br>表情✓ 身份✓</td></tr><tr><td>大笑/强度1/近景</td><td>v3</td>
+<td><img src="img-2026-10-16-210103/大笑_1_近景_v3.png" loading="lazy"></td><td>检测：开心<br>表情✓ 身份✓</td></tr><tr><td>大笑/强度1/中景</td><td>v3</td>
+<td><img src="img-2026-10-16-210103/大笑_1_中景_v3.png" loading="lazy"></td><td>检测：开心<br>表情✓ 身份✓</td></tr><tr><td>生气/强度1/近景</td><td>v3</td>
+<td><img src="img-2026-10-16-210103/生气_1_近景_v3.png" loading="lazy"></td><td>检测：生气<br>表情✓ 身份✓</td></tr><tr><td>生气/强度1/中景</td><td>v3</td>
+<td><img src="img-2026-10-16-210103/生气_1_中景_v3.png" loading="lazy"></td><td>检测：无语<br>表情✗ 身份✗</td></tr><tr><td>难过/强度1/近景</td><td>v3</td>
+<td><img src="img-2026-10-16-210103/难过_1_近景_v3.png" loading="lazy"></td><td>检测：难过<br>表情✓ 身份✓</td></tr><tr><td>难过/强度1/中景</td><td>v3</td>
+<td><img src="img-2026-10-16-210103/难过_1_中景_v3.png" loading="lazy"></td><td>检测：难过<br>表情✓ 身份✓</td></tr><tr><td>哭/强度1/近景</td><td>v3</td>
+<td><img src="img-2026-10-16-210103/哭_1_近景_v3.png" loading="lazy"></td><td>检测：哭<br>表情✓ 身份✓</td></tr><tr><td>哭/强度1/中景</td><td>v3</td>
+<td><img src="img-2026-10-16-210103/哭_1_中景_v3.png" loading="lazy"></td><td>检测：委屈<br>表情✓ 身份✗</td></tr><tr><td>惊讶/强度1/近景</td><td>v3</td>
+<td><img src="img-2026-10-16-210103/惊讶_1_近景_v3.png" loading="lazy"></td><td>检测：惊讶<br>表情✓ 身份✗</td></tr><tr><td>惊讶/强度1/中景</td><td>v3</td>
+<td><img src="img-2026-10-16-210103/惊讶_1_中景_v3.png" loading="lazy"></td><td>检测：惊讶<br>表情✓ 身份✓</td></tr><tr><td>疲惫/强度1/近景</td><td>v3</td>
+<td><img src="img-2026-10-16-210103/疲惫_1_近景_v3.png" loading="lazy"></td><td>检测：疲惫<br>表情✓ 身份✓</td></tr><tr><td>疲惫/强度1/中景</td><td>v3</td>
+<td><img src="img-2026-10-16-210103/疲惫_1_中景_v3.png" loading="lazy"></td><td>检测：疲惫<br>表情✓ 身份✓</td></tr><tr><td>崩溃/强度1/近景</td><td>v3</td>
+<td><img src="img-2026-10-16-210103/崩溃_1_近景_v3.png" loading="lazy"></td><td>检测：委屈<br>表情✗ 身份✓</td></tr><tr><td>崩溃/强度1/中景</td><td>v3</td>
+<td><img src="img-2026-10-16-210103/崩溃_1_中景_v3.png" loading="lazy"></td><td>检测：平静<br>表情✗ 身份✓</td></tr>
+</table></body></html>

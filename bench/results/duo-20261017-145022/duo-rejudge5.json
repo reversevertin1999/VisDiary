@@ -1,0 +1,398 @@
+{
+  "run": "rejudge5-20261017-145022",
+  "hero": "xiaomali",
+  "side": "dafeiyu",
+  "summary": {
+    "pairs": 16,
+    "hero_identity": {
+      "k": 16,
+      "n": 16,
+      "ci95": [
+        0.806,
+        1.0
+      ]
+    },
+    "side_identity": {
+      "k": 0,
+      "n": 16,
+      "ci95": [
+        0.0,
+        0.194
+      ]
+    },
+    "cross_negatives_caught": {
+      "k": 6,
+      "n": 6,
+      "ci95": [
+        0.61,
+        1.0
+      ]
+    },
+    "note": "v5：单次 identity_passes 双角色判定（分桶修复）"
+  },
+  "cells": [
+    {
+      "name": "一起吃饭开心_中景",
+      "file": "一起吃饭开心_中景.png",
+      "sha256": "616f7b643f75c78a",
+      "hero_pass": true,
+      "side_pass": false,
+      "cross_detected": false,
+      "hero_problems": [],
+      "side_problems": [
+        "dafeiyu 蓝色蝴蝶结 不符"
+      ],
+      "duration_s": 97.2,
+      "expected_cross": false
+    },
+    {
+      "name": "一起吃饭开心_全景",
+      "file": "一起吃饭开心_全景.png",
+      "sha256": "56c3c3a8bee06d86",
+      "hero_pass": true,
+      "side_pass": false,
+      "cross_detected": false,
+      "hero_problems": [],
+      "side_problems": [
+        "dafeiyu 头侧鳍状结构 不符",
+        "dafeiyu 蓝色蝴蝶结 不符"
+      ],
+      "duration_s": 96.6,
+      "expected_cross": false
+    },
+    {
+      "name": "大肥鱼安慰难_中景",
+      "file": "大肥鱼安慰难_中景.png",
+      "sha256": "81ea0963d9588893",
+      "hero_pass": true,
+      "side_pass": false,
+      "cross_detected": false,
+      "hero_problems": [],
+      "side_problems": [
+        "dafeiyu 瞳色 不符",
+        "dafeiyu 头侧鳍状结构 不符",
+        "dafeiyu 蓝色蝴蝶结 不符"
+      ],
+      "duration_s": 100.2,
+      "expected_cross": false
+    },
+    {
+      "name": "大肥鱼安慰难_全景",
+      "file": "大肥鱼安慰难_全景.png",
+      "sha256": "c663dde5ee6f7e5a",
+      "hero_pass": true,
+      "side_pass": false,
+      "cross_detected": false,
+      "hero_problems": [],
+      "side_problems": [
+        "dafeiyu 瞳色 不符",
+        "dafeiyu 头侧鳍状结构 不符",
+        "dafeiyu 蓝色蝴蝶结 不符"
+      ],
+      "duration_s": 103.2,
+      "expected_cross": false
+    },
+    {
+      "name": "一起赶 dd_中景",
+      "file": "一起赶 dd_中景.png",
+      "sha256": "795b11dcaa5987fb",
+      "hero_pass": true,
+      "side_pass": false,
+      "cross_detected": false,
+      "hero_problems": [],
+      "side_problems": [
+        "dafeiyu 头侧鳍状结构 不符",
+        "dafeiyu 蓝色蝴蝶结 不符"
+      ],
+      "duration_s": 92.6,
+      "expected_cross": false
+    },
+    {
+      "name": "一起赶 dd_全景",
+      "file": "一起赶 dd_全景.png",
+      "sha256": "c9fae36c0a2f5d36",
+      "hero_pass": true,
+      "side_pass": false,
+      "cross_detected": false,
+      "hero_problems": [],
+      "side_problems": [
+        "dafeiyu 头侧鳍状结构 不符",
+        "dafeiyu 蓝色蝴蝶结 不符",
+        "dafeiyu 尾鳍状结构 不符"
+      ],
+      "duration_s": 103.0,
+      "expected_cross": false
+    },
+    {
+      "name": "实验跑通惊讶_中景",
+      "file": "实验跑通惊讶_中景.png",
+      "sha256": "34283f6cb063abd7",
+      "hero_pass": true,
+      "side_pass": false,
+      "cross_detected": false,
+      "hero_problems": [],
+      "side_problems": [
+        "dafeiyu 头侧鳍状结构 不符",
+        "dafeiyu 蓝色蝴蝶结 不符"
+      ],
+      "duration_s": 112.1,
+      "expected_cross": false
+    },
+    {
+      "name": "实验跑通惊讶_全景",
+      "file": "实验跑通惊讶_全景.png",
+      "sha256": "8dc4427d51e470f9",
+      "hero_pass": true,
+      "side_pass": false,
+      "cross_detected": false,
+      "hero_problems": [],
+      "side_problems": [
+        "dafeiyu 头侧鳍状结构 不符",
+        "dafeiyu 蓝色蝴蝶结 不符"
+      ],
+      "duration_s": 103.2,
+      "expected_cross": false
+    },
+    {
+      "name": "小玛丽生气大_中景",
+      "file": "小玛丽生气大_中景.png",
+      "sha256": "6bce9b90c59ed9c7",
+      "hero_pass": true,
+      "side_pass": false,
+      "cross_detected": false,
+      "hero_problems": [],
+      "side_problems": [
+        "dafeiyu 头侧鳍状结构 不符",
+        "dafeiyu 蓝色蝴蝶结 不符"
+      ],
+      "duration_s": 206.9,
+      "expected_cross": false
+    },
+    {
+      "name": "小玛丽生气大_全景",
+      "file": "小玛丽生气大_全景.png",
+      "sha256": "79e72e70954003f0",
+      "hero_pass": true,
+      "side_pass": false,
+      "cross_detected": false,
+      "hero_problems": [],
+      "side_problems": [
+        "dafeiyu 瞳色 不符",
+        "dafeiyu 头侧鳍状结构 不符",
+        "dafeiyu 蓝色蝴蝶结 不符"
+      ],
+      "duration_s": 128.3,
+      "expected_cross": false
+    },
+    {
+      "name": "一起逛街期待_中景",
+      "file": "一起逛街期待_中景.png",
+      "sha256": "b76ead329c328618",
+      "hero_pass": true,
+      "side_pass": false,
+      "cross_detected": false,
+      "hero_problems": [],
+      "side_problems": [
+        "dafeiyu 头侧鳍状结构 不符",
+        "dafeiyu 蓝色蝴蝶结 不符"
+      ],
+      "duration_s": 134.1,
+      "expected_cross": false
+    },
+    {
+      "name": "一起逛街期待_全景",
+      "file": "一起逛街期待_全景.png",
+      "sha256": "7bd2d2fccf34e07b",
+      "hero_pass": true,
+      "side_pass": false,
+      "cross_detected": false,
+      "hero_problems": [],
+      "side_problems": [
+        "dafeiyu 头侧鳍状结构 不符",
+        "dafeiyu 蓝色蝴蝶结 不符",
+        "dafeiyu 尾鳍状结构 不符"
+      ],
+      "duration_s": 101.7,
+      "expected_cross": false
+    },
+    {
+      "name": "看恐怖片紧张_中景",
+      "file": "看恐怖片紧张_中景.png",
+      "sha256": "cf20eadfea97d787",
+      "hero_pass": true,
+      "side_pass": false,
+      "cross_detected": false,
+      "hero_problems": [],
+      "side_problems": [
+        "dafeiyu 头侧鳍状结构 不符",
+        "dafeiyu 蓝色蝴蝶结 不符"
+      ],
+      "duration_s": 118.7,
+      "expected_cross": false
+    },
+    {
+      "name": "看恐怖片紧张_全景",
+      "file": "看恐怖片紧张_全景.png",
+      "sha256": "82f577463f55d1cc",
+      "hero_pass": true,
+      "side_pass": false,
+      "cross_detected": false,
+      "hero_problems": [],
+      "side_problems": [
+        "dafeiyu 头侧鳍状结构 不符",
+        "dafeiyu 蓝色蝴蝶结 不符",
+        "dafeiyu 尾鳍状结构 不符"
+      ],
+      "duration_s": 109.2,
+      "expected_cross": false
+    },
+    {
+      "name": "通关游戏大笑_中景",
+      "file": "通关游戏大笑_中景.png",
+      "sha256": "2925a4c897e06309",
+      "hero_pass": true,
+      "side_pass": false,
+      "cross_detected": false,
+      "hero_problems": [],
+      "side_problems": [
+        "dafeiyu 头侧鳍状结构 不符",
+        "dafeiyu 蓝色蝴蝶结 不符"
+      ],
+      "duration_s": 114.4,
+      "expected_cross": false
+    },
+    {
+      "name": "通关游戏大笑_全景",
+      "file": "通关游戏大笑_全景.png",
+      "sha256": "43ed82b058777f67",
+      "hero_pass": true,
+      "side_pass": false,
+      "cross_detected": false,
+      "hero_problems": [],
+      "side_problems": [
+        "dafeiyu 头侧鳍状结构 不符",
+        "dafeiyu 蓝色蝴蝶结 不符"
+      ],
+      "duration_s": 143.3,
+      "expected_cross": false
+    },
+    {
+      "name": "neg0_一起吃饭开心",
+      "file": "neg0_一起吃饭开心.png",
+      "sha256": "5ed3a8b3893989d0",
+      "hero_pass": false,
+      "side_pass": false,
+      "cross_detected": true,
+      "hero_problems": [
+        "两个角色的特征互串（cross_contamination）",
+        "小玛丽 发色 不符"
+      ],
+      "side_problems": [
+        "dafeiyu 发色 不符",
+        "dafeiyu 头侧鳍状结构 不符",
+        "dafeiyu 蓝色蝴蝶结 不符"
+      ],
+      "duration_s": 128.0,
+      "expected_cross": true
+    },
+    {
+      "name": "neg1_大肥鱼安慰难",
+      "file": "neg1_大肥鱼安慰难.png",
+      "sha256": "d7f6f031d9ff966a",
+      "hero_pass": false,
+      "side_pass": false,
+      "cross_detected": true,
+      "hero_problems": [
+        "两个角色的特征互串（cross_contamination）",
+        "小玛丽 发色 不符",
+        "小玛丽 猫耳 不符"
+      ],
+      "side_problems": [
+        "dafeiyu 发色 不符",
+        "dafeiyu 刘海 不符",
+        "dafeiyu 头侧鳍状结构 不符"
+      ],
+      "duration_s": 105.3,
+      "expected_cross": true
+    },
+    {
+      "name": "neg2_一起赶 dd",
+      "file": "neg2_一起赶 dd.png",
+      "sha256": "96ce989551eec83e",
+      "hero_pass": false,
+      "side_pass": false,
+      "cross_detected": true,
+      "hero_problems": [
+        "两个角色的特征互串（cross_contamination）",
+        "小玛丽 发色 不符"
+      ],
+      "side_problems": [
+        "dafeiyu 发色 不符",
+        "dafeiyu 瞳色 不符",
+        "dafeiyu 头侧鳍状结构 不符"
+      ],
+      "duration_s": 131.7,
+      "expected_cross": true
+    },
+    {
+      "name": "neg3_实验跑通惊讶",
+      "file": "neg3_实验跑通惊讶.png",
+      "sha256": "96b52df6a8fd0ada",
+      "hero_pass": false,
+      "side_pass": false,
+      "cross_detected": true,
+      "hero_problems": [
+        "两个角色的特征互串（cross_contamination）",
+        "小玛丽 发色 不符",
+        "小玛丽 猫耳 不符"
+      ],
+      "side_problems": [
+        "dafeiyu 发色 不符",
+        "dafeiyu 头侧鳍状结构 不符",
+        "dafeiyu 蓝色蝴蝶结 不符"
+      ],
+      "duration_s": 134.8,
+      "expected_cross": true
+    },
+    {
+      "name": "neg4_小玛丽生气大",
+      "file": "neg4_小玛丽生气大.png",
+      "sha256": "78235a850663b54b",
+      "hero_pass": false,
+      "side_pass": false,
+      "cross_detected": true,
+      "hero_problems": [
+        "两个角色的特征互串（cross_contamination）",
+        "小玛丽 发色 不符",
+        "小玛丽 猫耳 不符"
+      ],
+      "side_problems": [
+        "dafeiyu 发色 不符",
+        "dafeiyu 瞳色 不符",
+        "dafeiyu 头侧鳍状结构 不符"
+      ],
+      "duration_s": 176.7,
+      "expected_cross": true
+    },
+    {
+      "name": "neg5_一起逛街期待",
+      "file": "neg5_一起逛街期待.png",
+      "sha256": "e9521b8b774b7e25",
+      "hero_pass": false,
+      "side_pass": false,
+      "cross_detected": true,
+      "hero_problems": [
+        "两个角色的特征互串（cross_contamination）",
+        "小玛丽 发色 不符",
+        "小玛丽 猫耳 不符"
+      ],
+      "side_problems": [
+        "dafeiyu 发色 不符",
+        "dafeiyu 刘海 不符",
+        "dafeiyu 头侧鳍状结构 不符"
+      ],
+      "duration_s": 133.0,
+      "expected_cross": true
+    }
+  ]
+}

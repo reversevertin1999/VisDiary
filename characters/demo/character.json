@@ -1,0 +1,159 @@
+{
+  "id": "demo",
+  "name": "小玛丽",
+  "source_image": "source.png",
+  "identity": [
+    {
+      "name": "发色",
+      "value": "银白色",
+      "critical": true
+    },
+    {
+      "name": "发型",
+      "value": "及腰长双马尾，系红色缎带",
+      "critical": true
+    },
+    {
+      "name": "瞳色",
+      "value": "琥珀色",
+      "critical": true
+    },
+    {
+      "name": "配饰",
+      "value": "左耳星星耳坠",
+      "critical": true
+    },
+    {
+      "name": "痣",
+      "value": "右眼角泪痣",
+      "critical": true
+    },
+    {
+      "name": "体型",
+      "value": "娇小",
+      "critical": false
+    }
+  ],
+  "outfits": {
+    "default": "白色水手服配藏青色百褶裙，红色领结"
+  },
+  "style_detected": "anime_cel",
+  "style_confidence": 0.9,
+  "sheets": {
+    "anime_cel": {
+      "style_id": "anime_cel",
+      "views": {
+        "front_full": "sheets/anime_cel/front_full.png",
+        "side_full": "sheets/anime_cel/side_full.png",
+        "back_full": "sheets/anime_cel/back_full.png",
+        "bust_smile": "sheets/anime_cel/bust_smile.png",
+        "bust_cry": "sheets/anime_cel/bust_cry.png",
+        "bust_angry": "sheets/anime_cel/bust_angry.png",
+        "bust_surprised": "sheets/anime_cel/bust_surprised.png",
+        "bust_tired": "sheets/anime_cel/bust_tired.png",
+        "bust_neutral": "sheets/anime_cel/bust_neutral.png",
+        "bust_laugh": "sheets/anime_cel/bust_laugh.png",
+        "bust_shy": "sheets/anime_cel/bust_shy.png",
+        "bust_think": "sheets/anime_cel/bust_think.png",
+        "bust_sad": "sheets/anime_cel/bust_sad.png",
+        "bust_shock": "sheets/anime_cel/bust_shock.png",
+        "bust_smug": "sheets/anime_cel/bust_smug.png",
+        "bust_determined": "sheets/anime_cel/bust_determined.png",
+        "bust_nervous": "sheets/anime_cel/bust_nervous.png",
+        "bust_touched": "sheets/anime_cel/bust_touched.png",
+        "bust_speechless": "sheets/anime_cel/bust_speechless.png"
+      },
+      "approved": true,
+      "cell_check": {
+        "bust_neutral": {
+          "expected": "平静",
+          "detected": "平静",
+          "ok": true
+        },
+        "bust_smile": {
+          "expected": "开心",
+          "detected": "平静",
+          "ok": false
+        },
+        "bust_laugh": {
+          "expected": "大笑",
+          "detected": "平静",
+          "ok": false
+        },
+        "bust_shy": {
+          "expected": "害羞",
+          "detected": "平静",
+          "ok": false
+        },
+        "bust_think": {
+          "expected": "思考",
+          "detected": "平静",
+          "ok": true
+        },
+        "bust_sad": {
+          "expected": "难过",
+          "detected": "平静",
+          "ok": false
+        },
+        "bust_cry": {
+          "expected": "大哭",
+          "detected": "平静",
+          "ok": false
+        },
+        "bust_angry": {
+          "expected": "暴怒",
+          "detected": "平静",
+          "ok": false
+        },
+        "bust_surprised": {
+          "expected": "惊讶",
+          "detected": "平静",
+          "ok": false
+        },
+        "bust_shock": {
+          "expected": "崩溃",
+          "detected": "平静",
+          "ok": false
+        },
+        "bust_tired": {
+          "expected": "疲惫",
+          "detected": "平静",
+          "ok": false
+        },
+        "bust_smug": {
+          "expected": "得意",
+          "detected": "平静",
+          "ok": false
+        },
+        "bust_determined": {
+          "expected": "坚定",
+          "detected": "平静",
+          "ok": false
+        },
+        "bust_nervous": {
+          "expected": "紧张",
+          "detected": "平静",
+          "ok": false
+        },
+        "bust_touched": {
+          "expected": "感动",
+          "detected": "平静",
+          "ok": false
+        },
+        "bust_speechless": {
+          "expected": "无语",
+          "detected": "平静",
+          "ok": true
+        }
+      }
+    }
+  },
+  "persona": {
+    "temperament": "",
+    "expressiveness": 1.0,
+    "max_intensity": {},
+    "banned": [],
+    "signature": [],
+    "overrides": {}
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "baseline": "round1-medium",
+  "expression_hit_rate": 0.833,
+  "panels": [
+    {
+      "panel": 1,
+      "target": "惊讶",
+      "detected": {
+        "detected_emotion": "惊讶",
+        "detected_intensity": 2,
+        "face_size": "large",
+        "head_bbox": [
+          0.17,
+          0.08,
+          0.65,
+          0.55
+        ],
+        "note": "张口、睁眼并带困倦感，整体是明显但不夸张的惊讶。"
+      },
+      "expression_pass": true
+    },
+    {
+      "panel": 2,
+      "target": "平静",
+      "detected": {
+        "detected_emotion": "平静/困倦",
+        "detected_intensity": 2,
+        "face_size": "medium",
+        "head_bbox": [
+          0.31,
+          0.13,
+          0.39,
+          0.34
+        ],
+        "note": "表情与目标情绪“平静（强度2）”基本一致，带轻微困倦呆萌感。"
+      },
+      "expression_pass": false
+    },
+    {
+      "panel": 3,
+      "target": "惊讶",
+      "detected": {
+        "detected_emotion": "惊讶",
+        "detected_intensity": 2,
+        "face_size": "large",
+        "head_bbox": [
+          0.34,
+          0.01,
+          0.64,
+          0.88
+        ],
+        "note": "主角张口、眼睛睁大并握拳，呈明显但不夸张的惊讶/好奇反应。"
+      },
+      "expression_pass": true
+    },
+    {
+      "panel": 4,
+      "target": "害羞",
+      "detected": {
+        "detected_emotion": "害羞",
+        "detected_intensity": 2,
+        "face_size": "large",
+        "head_bbox": [
+          0.06,
+          0.1,
+          0.54,
+          0.45
+        ],
+        "note": "主角脸部占画面较大，脸红、半垂眼和拘谨姿态表现出明显害羞，但不夸张。"
+      },
+      "expression_pass": true
+    },
+    {
+      "panel": 5,
+      "target": "开心",
+      "detected": {
+        "detected_emotion": "开心",
+        "detected_intensity": 2,
+        "face_size": "small",
+        "head_bbox": [
+          0.5,
+          0.43,
+          0.3,
+          0.26
+        ],
+        "note": "主角在跑步时露出轻微到明显的开心表情，脸部在整幅画面中占比较小。"
+      },
+      "expression_pass": true
+    },
+    {
+      "panel": 6,
+      "target": "疲惫",
+      "detected": {
+        "detected_emotion": "疲惫",
+        "detected_intensity": 2,
+        "face_size": "large",
+        "head_bbox": [
+          0.39,
+          0.06,
+          0.45,
+          0.65
+        ],
+        "note": "主角脸部占画面较大，半垂眼和躺床姿态符合明显但不夸张的疲惫感。"
+      },
+      "expression_pass": true
+    }
+  ]
+}

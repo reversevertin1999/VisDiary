@@ -1,0 +1,17 @@
+.env
+.venv/
+output/
+cache/
+usage/
+characters/*
+!characters/demo/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.smoke/
+# 各 provider 的整页渲染产物不入库
+bench/*/
+# 但基准结果入库（脚本、csv、json、html 都跟踪）
+!bench/results/
+# 基准结果里的图片除外
+bench/results/img-*/

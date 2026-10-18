@@ -1,0 +1,1645 @@
+{
+  "date": "2026-10-16",
+  "character": "xiaomali",
+  "provider": "codex",
+  "summary": {
+    "v3": {
+      "panels": 16,
+      "qc_error_count": 0,
+      "expression_na_count": 0,
+      "expression_top1_exact": {
+        "k": 10,
+        "n": 16,
+        "rate": 0.625,
+        "ci95": [
+          0.386,
+          0.815
+        ]
+      },
+      "expression_top2_exact": {
+        "k": 11,
+        "n": 16,
+        "rate": 0.688,
+        "ci95": [
+          0.444,
+          0.858
+        ]
+      },
+      "expression_group_hit": {
+        "k": 13,
+        "n": 16,
+        "rate": 0.812,
+        "ci95": [
+          0.57,
+          0.934
+        ]
+      },
+      "intensity_exact": {
+        "k": 13,
+        "n": 16,
+        "rate": 0.812,
+        "ci95": [
+          0.57,
+          0.934
+        ]
+      },
+      "intensity_mae": 0.188,
+      "intensity_bias": 0.188,
+      "overacted_by_target": {
+        "1": {
+          "k": 3,
+          "n": 16,
+          "rate": 0.188,
+          "ci95": [
+            0.066,
+            0.43
+          ]
+        },
+        "2": {
+          "k": 0,
+          "n": 0,
+          "rate": null,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "3": {
+          "k": 0,
+          "n": 0,
+          "rate": null,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "intensity_confusion": {
+        "rows_target_cols_detected": [
+          [
+            13,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "identity_pass": {
+        "k": 13,
+        "n": 16,
+        "rate": 0.812,
+        "ci95": [
+          0.57,
+          0.934
+        ]
+      }
+    }
+  },
+  "cells": [
+    {
+      "emotion": "开心",
+      "intensity": 1,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-2026-10-16-210103/开心_1_近景_v3.png",
+      "sha256": "f1f47b1e8814e93f",
+      "duration_s": 82.4,
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "开心",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "character_id": "xiaomali",
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "character_id": "xiaomali",
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "猫耳",
+            "result": "pass",
+            "feature_id": 3,
+            "character_id": "xiaomali",
+            "note": "头顶可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "character_id": "xiaomali",
+            "note": "浅蓝色大眼，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "character_id": "xiaomali",
+            "note": "大眼略呈半垂，眼尾稍上挑，整体显得呆萌。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "character_id": "xiaomali",
+            "note": "头部相对可见上身明显偏大，脸颊圆润，符合Q版比例。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "character_id": "xiaomali",
+            "note": "鼻子小而近点状，双颊带淡粉色腮红。"
+          },
+          {
+            "name": "太阳冠状发饰",
+            "result": "pass",
+            "feature_id": 8,
+            "character_id": "xiaomali",
+            "note": "头后方露出黄色尖角太阳冠状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "character_id": "xiaomali",
+            "note": "使用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "开心",
+          "detected_top2": [
+            "开心",
+            "平静"
+          ],
+          "detected_intensity": 1,
+          "face_size": "large",
+          "note": "嘴角轻微上扬，眼神放松，呈温和微笑。"
+        },
+        "cross_contamination": false
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is smiling (subtle).\n  face: mouth nearly closed with a small curl at the corners, eyebrows level, eyes open normally\n  body: shoulders level, no gesture beyond a small smile\n  restraint: this is a SUBTLE expression — no exaggerated expression, no manga symbols, no tears\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "开心",
+      "intensity": 1,
+      "shot": "中景",
+      "version": "v3",
+      "image": "img-2026-10-16-210103/开心_1_中景_v3.png",
+      "sha256": "cdd136136040a5f0",
+      "duration_s": 90.5,
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "开心",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "character_id": "xiaomali",
+            "note": "长发为浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "character_id": "xiaomali",
+            "note": "厚重齐刘海，脸侧有长发束，画面右侧长直发向下延伸。"
+          },
+          {
+            "name": "猫耳",
+            "result": "pass",
+            "feature_id": 3,
+            "character_id": "xiaomali",
+            "note": "头顶可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "character_id": "xiaomali",
+            "note": "浅蓝色大眼，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "character_id": "xiaomali",
+            "note": "大眼半垂，眼尾略上挑，神态呆萌。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "character_id": "xiaomali",
+            "note": "头部相对身体很大，脸颊圆润，符合Q版比例。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "character_id": "xiaomali",
+            "note": "鼻子小巧近点状，两颊有淡粉色腮红。"
+          },
+          {
+            "name": "太阳冠状发饰",
+            "result": "pass",
+            "feature_id": 8,
+            "character_id": "xiaomali",
+            "note": "头后方露出黄色尖角太阳冠状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "character_id": "xiaomali",
+            "note": "角色采用深棕色粗描边，线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "开心",
+          "detected_top2": [
+            "开心",
+            "平静"
+          ],
+          "detected_intensity": 1,
+          "face_size": "large",
+          "note": "嘴角轻轻上扬，眼神放松，呈现轻微愉悦。"
+        },
+        "cross_contamination": false
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is smiling (subtle).\n  face: mouth nearly closed with a small curl at the corners, eyebrows level, eyes open normally\n  body: hands relaxed, standing at ease, no exaggerated gesture\n  restraint: this is a SUBTLE expression — no exaggerated expression, no manga symbols, no tears\nmedium shot, waist up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "大笑",
+      "intensity": 1,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-2026-10-16-210103/大笑_1_近景_v3.png",
+      "sha256": "47554281e86344c9",
+      "duration_s": 85.7,
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "开心",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "character_id": "xiaomali",
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "character_id": "xiaomali",
+            "note": "厚重齐刘海，脸侧有长发束，画面右侧长直发向下延伸。"
+          },
+          {
+            "name": "猫耳",
+            "result": "pass",
+            "feature_id": 3,
+            "character_id": "xiaomali",
+            "note": "头顶可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "character_id": "xiaomali",
+            "note": "浅蓝色大眼，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "character_id": "xiaomali",
+            "note": "上眼睑半垂，眼尾略上挑，保留呆萌眼型。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "character_id": "xiaomali",
+            "note": "头部相对可见上身明显偏大，脸颊圆润，符合Q版比例。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "character_id": "xiaomali",
+            "note": "小点状鼻子，双颊有淡粉色腮红。"
+          },
+          {
+            "name": "太阳冠状发饰",
+            "result": "pass",
+            "feature_id": 8,
+            "character_id": "xiaomali",
+            "note": "头后方露出黄色尖角太阳冠状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "character_id": "xiaomali",
+            "note": "深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "开心",
+          "detected_top2": [
+            "开心",
+            "害羞"
+          ],
+          "detected_intensity": 2,
+          "face_size": "large",
+          "note": "张口微笑，双颊泛红，半垂的眼睛显得放松，略带羞涩。"
+        },
+        "cross_contamination": null
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is laughing (subtle).\n  face: mouth slightly open showing a hint of teeth, eyebrows level, eyes open with a soft crease\n  body: no movement, just the mouth slightly open\n  restraint: this is a SUBTLE expression — no exaggerated expression, no manga symbols, no tears\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "大笑",
+      "intensity": 1,
+      "shot": "中景",
+      "version": "v3",
+      "image": "img-2026-10-16-210103/大笑_1_中景_v3.png",
+      "sha256": "85ffe4a91a6307a3",
+      "duration_s": 85.6,
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "开心",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "character_id": "xiaomali",
+            "note": "长发为浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "character_id": "xiaomali",
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "猫耳",
+            "result": "pass",
+            "feature_id": 3,
+            "character_id": "xiaomali",
+            "note": "头顶可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "character_id": "xiaomali",
+            "note": "浅蓝色大眼，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "character_id": "xiaomali",
+            "note": "双眼半垂，眼尾略上挑，保留呆萌感。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "character_id": "xiaomali",
+            "note": "可见部分呈Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "character_id": "xiaomali",
+            "note": "鼻子为极小的点状短线，双颊有淡粉色腮红。"
+          },
+          {
+            "name": "太阳冠状发饰",
+            "result": "pass",
+            "feature_id": 8,
+            "character_id": "xiaomali",
+            "note": "头后露出黄色尖角太阳冠状装饰，顶部局部出框但可辨认。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "character_id": "xiaomali",
+            "note": "整体采用深棕色粗描边，线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "开心",
+          "detected_top2": [
+            "开心",
+            "害羞"
+          ],
+          "detected_intensity": 1,
+          "face_size": "large",
+          "note": "半垂眼、小幅张嘴微笑，双颊泛红，呈轻松愉快并略带羞涩的神态。"
+        },
+        "cross_contamination": false
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is laughing (subtle).\n  face: mouth slightly open showing a hint of teeth, eyebrows level, eyes open with a soft crease\n  body: shoulders still, no laughing movement, standing straight\n  restraint: this is a SUBTLE expression — no exaggerated expression, no manga symbols, no tears\nmedium shot, waist up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "生气",
+      "intensity": 1,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-2026-10-16-210103/生气_1_近景_v3.png",
+      "sha256": "b42ac767bda236dc",
+      "duration_s": 86.3,
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "生气",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "character_id": "xiaomali",
+            "note": "浅橙金至蜜桃金色长发，符合参考。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "character_id": "xiaomali",
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "猫耳",
+            "result": "pass",
+            "feature_id": 3,
+            "character_id": "xiaomali",
+            "note": "头顶有浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "character_id": "xiaomali",
+            "note": "蓝色大眼，含浅蓝区域和明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "fail",
+            "feature_id": 5,
+            "character_id": "xiaomali",
+            "note": "眼尾略上挑，但眼睛较圆、睁开较大，缺少参考图明显的半垂困倦感。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "character_id": "xiaomali",
+            "note": "可见部分呈Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "character_id": "xiaomali",
+            "note": "小点状鼻子和淡粉色腮红均可见。"
+          },
+          {
+            "name": "太阳冠状发饰",
+            "result": "pass",
+            "feature_id": 8,
+            "character_id": "xiaomali",
+            "note": "头后方露出黄色尖角太阳冠状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "character_id": "xiaomali",
+            "note": "深棕色粗描边，整体线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "生气",
+          "detected_top2": [
+            "生气",
+            "无语"
+          ],
+          "detected_intensity": 1,
+          "face_size": "large",
+          "note": "眉头轻压、嘴角略向下，双臂交叠，呈轻微不悦，也有无语感。"
+        },
+        "cross_contamination": false
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is angry (subtle).\n  face: mouth closed and pressed flat, eyebrows only slightly drawn, eyes open normally\n  body: hands resting, no fist\n  restraint: this is a SUBTLE expression — no exaggerated expression, no manga symbols, no tears\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "生气",
+      "intensity": 1,
+      "shot": "中景",
+      "version": "v3",
+      "image": "img-2026-10-16-210103/生气_1_中景_v3.png",
+      "sha256": "751e60245cd7c09e",
+      "duration_s": 92.0,
+      "identity_pass": false,
+      "expression_fail": "category",
+      "detected": "无语",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "character_id": "小玛丽",
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "character_id": "小玛丽",
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "猫耳",
+            "result": "pass",
+            "feature_id": 3,
+            "character_id": "小玛丽",
+            "note": "头顶有浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "character_id": "小玛丽",
+            "note": "大眼虹膜为浅蓝色，带深蓝阴影和白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "character_id": "小玛丽",
+            "note": "眼睛半垂，眼尾略上挑，神态略显呆萌。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "character_id": "小玛丽",
+            "note": "可见部分符合Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "character_id": "小玛丽",
+            "note": "鼻子为小点状，双颊有淡粉色腮红。"
+          },
+          {
+            "name": "太阳冠状发饰",
+            "result": "pass",
+            "feature_id": 8,
+            "character_id": "小玛丽",
+            "note": "头后露出黄色尖角太阳冠状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "character_id": "小玛丽",
+            "note": "使用深棕色粗描边，线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "无语",
+          "detected_top2": [
+            "无语",
+            "平静"
+          ],
+          "detected_intensity": 1,
+          "face_size": "large",
+          "note": "眼睑半垂，嘴角轻微下弯，整体情绪克制，略显无奈。"
+        },
+        "cross_contamination": false
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is angry (subtle).\n  face: mouth closed and pressed flat, eyebrows only slightly drawn, eyes open normally\n  body: arms relaxed at sides, no crossed arms, no stomping\n  restraint: this is a SUBTLE expression — no exaggerated expression, no manga symbols, no tears\nmedium shot, waist up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "难过",
+      "intensity": 1,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-2026-10-16-210103/难过_1_近景_v3.png",
+      "sha256": "1b62461c73675fab",
+      "duration_s": 76.9,
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "难过",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "character_id": "xiaomali",
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "character_id": "xiaomali",
+            "note": "厚重齐刘海，脸侧长发束明显，画面右侧长直发向下延伸。"
+          },
+          {
+            "name": "猫耳",
+            "result": "pass",
+            "feature_id": 3,
+            "character_id": "xiaomali",
+            "note": "头顶两侧可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "character_id": "xiaomali",
+            "note": "大眼呈浅蓝青色，眼内有白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "character_id": "xiaomali",
+            "note": "双眼半垂，外眼角略上挑，带困倦感。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "character_id": "xiaomali",
+            "note": "可见部分符合Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "character_id": "xiaomali",
+            "note": "鼻子为小点状，双颊有淡粉色腮红。"
+          },
+          {
+            "name": "太阳冠状发饰",
+            "result": "pass",
+            "feature_id": 8,
+            "character_id": "xiaomali",
+            "note": "头后方露出黄色尖角太阳冠状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "character_id": "xiaomali",
+            "note": "使用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "难过",
+          "detected_top2": [
+            "难过",
+            "疲惫"
+          ],
+          "detected_intensity": 1,
+          "face_size": "large",
+          "note": "眼睑低垂、嘴角轻微向下，神情低落，也带疲倦感；没有明显泪水。"
+        },
+        "cross_contamination": false
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is sad (subtle).\n  face: mouth closed with slight downturn, eyes open at normal width gazing down\n  body: head level, only the gaze lowered\n  restraint: this is a SUBTLE expression — no exaggerated expression, no manga symbols, no tears\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "难过",
+      "intensity": 1,
+      "shot": "中景",
+      "version": "v3",
+      "image": "img-2026-10-16-210103/难过_1_中景_v3.png",
+      "sha256": "7dd8f86f6f012d47",
+      "duration_s": 81.5,
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "难过",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "character_id": "xiaomali",
+            "note": "长发为浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "character_id": "xiaomali",
+            "note": "厚重齐刘海、脸侧长发束及右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "猫耳",
+            "result": "pass",
+            "feature_id": 3,
+            "character_id": "xiaomali",
+            "note": "头顶有浅橙色三角猫耳状结构，棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "character_id": "xiaomali",
+            "note": "浅蓝色大眼，带白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "character_id": "xiaomali",
+            "note": "大眼半垂，眼尾略上挑，保留呆萌感。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "character_id": "xiaomali",
+            "note": "大头小身的Q版比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "character_id": "xiaomali",
+            "note": "小点状鼻子与淡粉色腮红清晰可见。"
+          },
+          {
+            "name": "太阳冠状发饰",
+            "result": "pass",
+            "feature_id": 8,
+            "character_id": "xiaomali",
+            "note": "头后方露出黄色尖角太阳冠状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "character_id": "xiaomali",
+            "note": "使用深棕色粗描边，线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "难过",
+          "detected_top2": [
+            "难过",
+            "委屈"
+          ],
+          "detected_intensity": 1,
+          "face_size": "large",
+          "note": "眉头略抬、眼神低落，嘴角下弯；没有明显泪水，情绪较轻微。"
+        },
+        "cross_contamination": false
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is sad (subtle).\n  face: mouth closed with slight downturn, eyes open at normal width gazing down\n  body: shoulders level, no hunching, hands still\n  restraint: this is a SUBTLE expression — no exaggerated expression, no manga symbols, no tears\nmedium shot, waist up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "哭",
+      "intensity": 1,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-2026-10-16-210103/哭_1_近景_v3.png",
+      "sha256": "7521e350056b493e",
+      "duration_s": 90.3,
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "哭",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "character_id": "xiaomali",
+            "note": "长发为浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "character_id": "xiaomali",
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "猫耳",
+            "result": "pass",
+            "feature_id": 3,
+            "character_id": "xiaomali",
+            "note": "头顶可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "character_id": "xiaomali",
+            "note": "大眼呈浅蓝色，眼内有白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "character_id": "xiaomali",
+            "note": "保留半垂大眼和略上挑的眼尾，整体呆萌。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "character_id": "xiaomali",
+            "note": "近景中头部明显大于可见上身，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "character_id": "xiaomali",
+            "note": "可见小点状鼻子及淡粉色腮红。"
+          },
+          {
+            "name": "太阳冠状发饰",
+            "result": "pass",
+            "feature_id": 8,
+            "character_id": "xiaomali",
+            "note": "头后方露出黄色尖角太阳冠状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "character_id": "xiaomali",
+            "note": "采用深棕色粗描边，线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "哭",
+          "detected_top2": [
+            "哭",
+            "委屈"
+          ],
+          "detected_intensity": 2,
+          "face_size": "large",
+          "note": "眼角可见泪滴，眉眼低垂、小嘴略向下，呈含泪委屈的神情。"
+        },
+        "cross_contamination": false
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is crying with tears (subtle).\n  face: a single small tear at one eye corner, mouth closed, eyebrows only slightly raised\n  body: one small tear only, no wiping gesture\n  restraint: this is a SUBTLE expression — no exaggerated expression, no manga symbols, no tears\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "哭",
+      "intensity": 1,
+      "shot": "中景",
+      "version": "v3",
+      "image": "img-2026-10-16-210103/哭_1_中景_v3.png",
+      "sha256": "759760e95a19274d",
+      "duration_s": 86.1,
+      "identity_pass": false,
+      "expression_fail": null,
+      "detected": "委屈",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "character_id": "小玛丽",
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "character_id": "小玛丽",
+            "note": "厚重齐刘海、脸侧长发束和右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "猫耳",
+            "result": "pass",
+            "feature_id": 3,
+            "character_id": "小玛丽",
+            "note": "头顶有浅橙色三角猫耳结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "character_id": "小玛丽",
+            "note": "双眼呈浅蓝色，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "character_id": "小玛丽",
+            "note": "保留半垂大眼和略上挑的眼尾，本格眉眼带低落感。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "character_id": "小玛丽",
+            "note": "可见部分保留Q版大头比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "character_id": "小玛丽",
+            "note": "鼻子小巧近点状，双颊有淡粉色腮红。"
+          },
+          {
+            "name": "太阳冠状发饰",
+            "result": "pass",
+            "feature_id": 8,
+            "character_id": "小玛丽",
+            "note": "头后露出黄色尖角太阳冠状装饰，顶部局部出框。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "character_id": "小玛丽",
+            "note": "使用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "委屈",
+          "detected_top2": [
+            "委屈",
+            "哭"
+          ],
+          "detected_intensity": 1,
+          "face_size": "large",
+          "note": "眉形低落，眼睛含泪，画面右侧眼角有一滴泪，小嘴微微下撇。"
+        },
+        "cross_contamination": null
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is crying with tears (subtle).\n  face: a single small tear at one eye corner, mouth closed, eyebrows only slightly raised\n  body: standing upright, no sobbing motion, hands at sides\n  restraint: this is a SUBTLE expression — no exaggerated expression, no manga symbols, no tears\nmedium shot, waist up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "惊讶",
+      "intensity": 1,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-2026-10-16-210103/惊讶_1_近景_v3.png",
+      "sha256": "6b9993f0d4fd4abc",
+      "duration_s": 80.1,
+      "identity_pass": false,
+      "expression_fail": null,
+      "detected": "惊讶",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "character_id": "小玛丽",
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "character_id": "小玛丽",
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "猫耳",
+            "result": "pass",
+            "feature_id": 3,
+            "character_id": "小玛丽",
+            "note": "头顶可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "character_id": "小玛丽",
+            "note": "大眼虹膜为蓝色至浅蓝色，带明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "fail",
+            "feature_id": 5,
+            "character_id": "小玛丽",
+            "note": "双眼明显睁圆，未呈现参考图的半垂眼型与困倦感。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "character_id": "小玛丽",
+            "note": "可见部分呈Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "character_id": "小玛丽",
+            "note": "可见小点状鼻子与淡粉色腮红。"
+          },
+          {
+            "name": "太阳冠状发饰",
+            "result": "pass",
+            "feature_id": 8,
+            "character_id": "小玛丽",
+            "note": "头后露出黄色尖角太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "character_id": "小玛丽",
+            "note": "采用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "惊讶",
+          "detected_top2": [
+            "惊讶",
+            "平静"
+          ],
+          "detected_intensity": 1,
+          "face_size": "large",
+          "note": "眼睛睁圆，小嘴微张，呈轻微惊讶；眉眼整体较放松。"
+        },
+        "cross_contamination": false
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is surprised (subtle).\n  face: eyes open slightly wider than neutral, eyebrows mildly raised, lips just parted\n  body: no startle motion, only the eyes slightly wider\n  restraint: this is a SUBTLE expression — no exaggerated expression, no manga symbols, no tears\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "惊讶",
+      "intensity": 1,
+      "shot": "中景",
+      "version": "v3",
+      "image": "img-2026-10-16-210103/惊讶_1_中景_v3.png",
+      "sha256": "8def5a63de5d02de",
+      "duration_s": 78.4,
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "惊讶",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "character_id": "xiaomali",
+            "note": "长发为浅橙金色至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "character_id": "xiaomali",
+            "note": "厚重齐刘海，脸侧长发束明显，画面右侧长直发向下延伸。"
+          },
+          {
+            "name": "猫耳",
+            "result": "pass",
+            "feature_id": 3,
+            "character_id": "xiaomali",
+            "note": "头顶可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "character_id": "xiaomali",
+            "note": "蓝色大眼，下部偏浅蓝，白色高光清晰。"
+          },
+          {
+            "name": "眼型",
+            "result": "fail",
+            "feature_id": 5,
+            "character_id": "xiaomali",
+            "note": "双眼睁大且偏圆，不呈参考图的半垂、困倦眼型。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "character_id": "xiaomali",
+            "note": "呈Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "character_id": "xiaomali",
+            "note": "可见小点状鼻子及淡粉色腮红。"
+          },
+          {
+            "name": "太阳冠状发饰",
+            "result": "pass",
+            "feature_id": 8,
+            "character_id": "xiaomali",
+            "note": "头后露出黄色尖角太阳冠状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "character_id": "xiaomali",
+            "note": "角色使用深棕色粗描边，整体线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "惊讶",
+          "detected_top2": [
+            "惊讶",
+            "平静"
+          ],
+          "detected_intensity": 1,
+          "face_size": "large",
+          "note": "眼睛睁圆，眉毛略抬，小嘴呈轻微O形；神态柔和，属于轻微惊讶。"
+        },
+        "cross_contamination": false
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is surprised (subtle).\n  face: eyes open slightly wider than neutral, eyebrows mildly raised, lips just parted\n  body: body still, no leaning back, no hands to face\n  restraint: this is a SUBTLE expression — no exaggerated expression, no manga symbols, no tears\nmedium shot, waist up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "疲惫",
+      "intensity": 1,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-2026-10-16-210103/疲惫_1_近景_v3.png",
+      "sha256": "4ef8f759a23b6099",
+      "duration_s": 85.3,
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "疲惫",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "character_id": "xiaomali",
+            "note": "长发为浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "character_id": "xiaomali",
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长发均可见。"
+          },
+          {
+            "name": "猫耳",
+            "result": "pass",
+            "feature_id": 3,
+            "character_id": "xiaomali",
+            "note": "头顶可见浅橙色三角猫耳结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "character_id": "xiaomali",
+            "note": "蓝色大眼，虹膜有浅蓝区域和白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "character_id": "xiaomali",
+            "note": "眼睛半垂、外眼角略挑，呈困倦感。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "character_id": "xiaomali",
+            "note": "可见部分呈Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "character_id": "xiaomali",
+            "note": "小点状鼻子及淡粉色腮红清晰可见。"
+          },
+          {
+            "name": "太阳冠状发饰",
+            "result": "pass",
+            "feature_id": 8,
+            "character_id": "xiaomali",
+            "note": "头后露出黄色尖角太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "character_id": "xiaomali",
+            "note": "采用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "疲惫",
+          "detected_top2": [
+            "疲惫",
+            "平静"
+          ],
+          "detected_intensity": 2,
+          "face_size": "large",
+          "note": "眼皮明显下垂，头部倾斜，嘴微张，整体显得困倦且安静。"
+        },
+        "cross_contamination": false
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is exhausted (subtle).\n  face: eyelids slightly heavy but eyes open, mouth closed with a small exhale\n  body: no yawning, no resting head on hand\n  restraint: this is a SUBTLE expression — no exaggerated expression, no manga symbols, no tears\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "疲惫",
+      "intensity": 1,
+      "shot": "中景",
+      "version": "v3",
+      "image": "img-2026-10-16-210103/疲惫_1_中景_v3.png",
+      "sha256": "67a586bd136eb6ac",
+      "duration_s": 79.3,
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "疲惫",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "character_id": "xiaomali",
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "character_id": "xiaomali",
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "猫耳",
+            "result": "pass",
+            "feature_id": 3,
+            "character_id": "xiaomali",
+            "note": "头顶有浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "character_id": "xiaomali",
+            "note": "大眼呈浅蓝色，含深蓝渐变及白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "character_id": "xiaomali",
+            "note": "双眼半垂，眼尾略上挑，呈困倦神态。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "character_id": "xiaomali",
+            "note": "可见部分呈明显Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "character_id": "xiaomali",
+            "note": "鼻子以小笔触表示，双颊有淡粉色腮红。"
+          },
+          {
+            "name": "太阳冠状发饰",
+            "result": "pass",
+            "feature_id": 8,
+            "character_id": "xiaomali",
+            "note": "头后方露出黄色尖角太阳冠状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "character_id": "xiaomali",
+            "note": "角色使用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "疲惫",
+          "detected_top2": [
+            "疲惫",
+            "平静"
+          ],
+          "detected_intensity": 1,
+          "face_size": "large",
+          "note": "眼睑半垂、眉形略低落，嘴部微小且放松，呈轻微倦意。"
+        },
+        "cross_contamination": false
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is exhausted (subtle).\n  face: eyelids slightly heavy but eyes open, mouth closed with a small exhale\n  body: shoulders just a bit low, standing upright, no slumping\n  restraint: this is a SUBTLE expression — no exaggerated expression, no manga symbols, no tears\nmedium shot, waist up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "崩溃",
+      "intensity": 1,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-2026-10-16-210103/崩溃_1_近景_v3.png",
+      "sha256": "fd800ef2b5a27e87",
+      "duration_s": 100.2,
+      "identity_pass": true,
+      "expression_fail": "category",
+      "detected": "委屈",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "character_id": "xiaomali",
+            "note": "长发为浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "character_id": "xiaomali",
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "猫耳",
+            "result": "pass",
+            "feature_id": 3,
+            "character_id": "xiaomali",
+            "note": "头顶可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "character_id": "xiaomali",
+            "note": "双眼呈浅蓝色，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "character_id": "xiaomali",
+            "note": "大眼半垂，眼尾略挑，保留呆萌感。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "character_id": "xiaomali",
+            "note": "头部相对可见肩身明显偏大，脸颊圆润；下半身未入镜。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "character_id": "xiaomali",
+            "note": "鼻子小而近点状，双颊有淡粉色腮红。"
+          },
+          {
+            "name": "太阳冠状发饰",
+            "result": "pass",
+            "feature_id": 8,
+            "character_id": "xiaomali",
+            "note": "头后露出黄色尖角太阳冠状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "character_id": "xiaomali",
+            "note": "采用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "委屈",
+          "detected_top2": [
+            "委屈",
+            "无语"
+          ],
+          "detected_intensity": 1,
+          "face_size": "large",
+          "note": "眉毛内侧略抬、眼睑半垂，嘴部轻微波浪状，呈轻微委屈与无奈感；无明显泪水或夸张表情。"
+        },
+        "cross_contamination": false
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is devastated (subtle).\n  face: a faint stiff smile, eyes open normally, mouth closed, no gloom lines\n  body: a calm face with only a faint stiff smile\n  restraint: this is a SUBTLE expression — no exaggerated expression, no manga symbols, no tears\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "崩溃",
+      "intensity": 1,
+      "shot": "中景",
+      "version": "v3",
+      "image": "img-2026-10-16-210103/崩溃_1_中景_v3.png",
+      "sha256": "33bb7b4b07feb4fb",
+      "duration_s": 98.9,
+      "identity_pass": true,
+      "expression_fail": "category",
+      "detected": "平静",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "character_id": "xiaomali",
+            "note": "长发为浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "character_id": "xiaomali",
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "猫耳",
+            "result": "pass",
+            "feature_id": 3,
+            "character_id": "xiaomali",
+            "note": "头顶可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "character_id": "xiaomali",
+            "note": "大眼呈浅蓝色，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "character_id": "xiaomali",
+            "note": "大眼略呈半垂状，外眼角微挑，神态呆萌。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "character_id": "xiaomali",
+            "note": "可见部分符合Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "character_id": "xiaomali",
+            "note": "鼻子为小巧短曲线，接近点状；脸颊有淡粉色腮红。"
+          },
+          {
+            "name": "太阳冠状发饰",
+            "result": "pass",
+            "feature_id": 8,
+            "character_id": "xiaomali",
+            "note": "头后露出黄色尖角太阳冠状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "character_id": "xiaomali",
+            "note": "采用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "平静",
+          "detected_top2": [
+            "平静",
+            "委屈"
+          ],
+          "detected_intensity": 1,
+          "face_size": "large",
+          "note": "神态整体安静，眉眼略垂，小嘴轻微波浪状，带一点委屈感。"
+        },
+        "cross_contamination": false
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is devastated (subtle).\n  face: a faint stiff smile, eyes open normally, mouth closed, no gloom lines\n  body: posture upright, no collapsing, no facepalm\n  restraint: this is a SUBTLE expression — no exaggerated expression, no manga symbols, no tears\nmedium shot, waist up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    }
+  ]
+}

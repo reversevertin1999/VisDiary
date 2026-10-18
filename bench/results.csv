@@ -1,0 +1,4 @@
+provider,model,character,diary,panels,qc_first_pass,qc_final_pass,avg_panel_seconds,cost_per_panel,cn_score_manual
+mock,mock-image-v0,demo,short,4,0.5,1.0,0.0,0.0,
+mock,mock-image-v0,demo,medium,6,0.667,1.0,0.001,0.0,
+codex,builtin-image_gen,xiaomali,short,4,1.0,1.0,92.064,0.0,

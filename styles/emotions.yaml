@@ -1,0 +1,380 @@
+# 情绪词表：21 种情绪 × 3 级强度。改这里就能调表情，不用动代码。
+# 每种情绪：en 英文词 / desc 中文说明（进分镜 prompt）/ ref_view 参考胸像（可为 null，
+# 没有对应胸像时表情完全靠 ACTING 文本）/ shots 推荐镜头 / manpu 推荐漫符
+# levels 三级五官与肢体：body 全身（中景/全景/远景用），body_close 只允许上半身和手部（近景/特写用）
+# 写作原则：具体到眉毛、眼睛（含高光/空洞）、嘴形、脸色；3 级必须漫画式夸张；
+# 不写会改变角色外形的内容（不加披风、不变非人形、不把脸挡住）。
+
+manpu_en:
+  汗滴: "a big cartoon sweat drop on the side of the head"
+  青筋: "a cross-shaped anger vein mark on the forehead"
+  腮红线: "red blush lines on the cheeks"
+  闪光: "sparkling shine effects around the character"
+  阴影线: "vertical gloom lines over the upper face"
+  泪花: "big glossy teary eyes with sparkling tears"
+  集中线: "radial speed lines in the background"
+  花背景: "a background full of blooming flowers"
+  闪电背景: "a dramatic lightning bolt in the background"
+  阴云: "a small dark rain cloud above the head"
+  灵魂出窍: "a small ghost-like soul floating out of the mouth"
+  怒气: "a red anger aura around the character"
+
+平静:
+  en: calm
+  desc: 日常、放松、无大事
+  ref_view: bust_neutral
+  shots: [中景, 全景, 近景]
+  manpu: []
+  levels:
+    1: { face: "relaxed face, soft natural eyes, small gentle mouth",
+         body: "standing or sitting at ease, shoulders relaxed",
+         body_close: "shoulders relaxed, head at a natural angle" }
+    2: { face: "content half-smile, calm clear eyes with normal highlights",
+         body: "one hand resting casually, loose comfortable posture",
+         body_close: "one hand resting on the table, posture loose" }
+    3: { face: "utterly serene, eyes gently closed, faint peaceful smile",
+         body: "leaning back with hands behind head, completely at ease",
+         body_close: "head resting on one hand, eyes gently closed" }
+
+开心:
+  en: smiling
+  desc: 高兴、有好事
+  ref_view: bust_smile
+  shots: [近景, 中景, 特写]
+  manpu: [闪光, 花背景]
+  levels:
+    1: { face: "mouth nearly closed with a small curl at the corners, eyebrows level, eyes open normally",
+         body: "hands relaxed, standing at ease, no exaggerated gesture",
+         body_close: "shoulders level, no gesture beyond a small smile" }
+    2: { face: "clear smile showing teeth a bit, eyes curved upward, rosy cheeks",
+         body: "hands clasped together in front, body leaning forward slightly",
+         body_close: "hands clasped together near the chest, leaning forward slightly" }
+    3: { face: "beaming grin, eyes turned into happy crescents, huge smile wrinkles",
+         body: "jumping with joy, both arms thrown up",
+         body_close: "both fists pumped up beside the cheeks, radiant grin" }
+
+大笑:
+  en: laughing
+  desc: 笑出声、忍不住
+  ref_view: bust_laugh
+  shots: [近景, 特写, 中景]
+  manpu: [泪花, 闪光]
+  levels:
+    1: { face: "mouth slightly open showing a hint of teeth, eyebrows level, eyes open with a soft crease",
+         body: "shoulders still, no laughing movement, standing straight",
+         body_close: "no movement, just the mouth slightly open" }
+    2: { face: "wide open laughing mouth, eyes squeezed shut into arcs, head tilted back",
+         body: "one hand on belly, body rocking with laughter",
+         body_close: "head tilted back laughing, one hand on the chest" }
+    3: { face: "uncontrollable laughter, tears of laughter in the corners of tightly shut eyes, mouth wide open",
+         body: "doubled over laughing, slapping the table, tears flying",
+         body_close: "laughing so hard the shoulders bounce, one hand slapping the table" }
+
+感动:
+  en: touched
+  desc: 被戳中、想哭但暖心
+  ref_view: bust_touched
+  shots: [近景, 特写, 中景]
+  manpu: [泪花, 花背景]
+  levels:
+    1: { face: "soft watery eyes, small moved smile, lips pressed gently",
+         body: "one hand over the heart",
+         body_close: "one hand over the heart" }
+    2: { face: "glistening teary eyes, trembling touched smile, eyebrows raised softly",
+         body: "both hands cupped near the chin, shoulders slightly hunched",
+         body_close: "both hands cupped near the chin" }
+    3: { face: "big sparkling tears rolling down, mouth wobbling between crying and smiling, deeply moved expression",
+         body: "clutching hands to chest, leaning forward as if about to sob with joy",
+         body_close: "both hands clutching the chest, tears sparkling" }
+
+得意:
+  en: smug
+  desc: 有点小骄傲、求表扬
+  ref_view: bust_smug
+  shots: [近景, 中景, 仰视]
+  manpu: [闪光]
+  levels:
+    1: { face: "smirk, one corner of mouth raised, half-lidded confident eyes",
+         body: "arms crossed, chin slightly lifted",
+         body_close: "arms crossed, chin lifted" }
+    2: { face: "visible smug grin, narrowed proud eyes, raised eyebrows",
+         body: "one hand on hip, other hand pointing thumb at self",
+         body_close: "one thumb pointing at self, smug grin" }
+    3: { face: "triumphant huge smirk, sparkling proud eyes, nose pointed up high",
+         body: "hands on hips, chest puffed out, laughing proudly with head back",
+         body_close: "chin raised high, proud grin, one hand flipping hair back" }
+
+期待:
+  en: hopeful
+  desc: 盼望、眼睛发亮
+  ref_view: null
+  shots: [近景, 特写, 中景]
+  manpu: [闪光, 花背景]
+  levels:
+    1: { face: "bright attentive eyes, small expectant smile",
+         body: "leaning forward a little, listening closely",
+         body_close: "leaning forward slightly, eyes bright" }
+    2: { face: "shining hopeful eyes with big highlights, open expectant smile",
+         body: "hands clasped under the chin, body leaning forward eagerly",
+         body_close: "hands clasped under the chin, leaning forward" }
+    3: { face: "huge sparkling starry eyes, mouth open in an excited gasp, face glowing with anticipation",
+         body: "bouncing on the spot, fists clenched in excitement near the cheeks",
+         body_close: "fists clenched in excitement under the chin, leaning far forward" }
+
+害羞:
+  en: blushing shyly
+  desc: 不好意思、脸红
+  ref_view: bust_shy
+  shots: [近景, 特写]
+  manpu: [腮红线, 汗滴]
+  levels:
+    1: { face: "faint blush on cheeks, eyes looking away, small shy smile",
+         body: "one hand touching the back of the head",
+         body_close: "one hand touching the cheek, eyes looking away" }
+    2: { face: "clear red cheeks, gaze dodging sideways, mouth pursed shyly",
+         body: "fidgeting with fingers, shoulders drawn in",
+         body_close: "fingers fidgeting near the chest, shoulders drawn in" }
+    3: { face: "whole face bright red, steam rising from the head, eyes spinning with embarrassment",
+         body: "shrinking back shyly, gripping own sleeves",
+         body_close: "cheeks fully red, fingertips touching lips, eyes darting aside" }
+
+思考:
+  en: thinking
+  desc: 琢磨、犹豫
+  ref_view: bust_think
+  shots: [近景, 中景, 特写]
+  manpu: []
+  levels:
+    1: { face: "eyes looking up thoughtfully, lips slightly pursed",
+         body: "one finger touching the chin",
+         body_close: "one finger touching the chin, eyes looking up" }
+    2: { face: "furrowed thinking brows, eyes narrowed in concentration, mouth tilted",
+         body: "arms crossed, head lowered in thought",
+         body_close: "arms crossed, one hand on the chin" }
+    3: { face: "intense pondering stare, deep frown, visible gears-turning expression",
+         body: "hand gripping the forehead, elbows on desk, deep in thought",
+         body_close: "hand gripping the forehead, elbow propped on the desk" }
+
+无语:
+  en: speechless
+  desc: 无奈、哭笑不得
+  ref_view: bust_speechless
+  shots: [近景, 中景, 特写]
+  manpu: [汗滴, 阴影线]
+  chibi_ok: true
+  levels:
+    1: { face: "flat deadpan mouth, half-lidded unimpressed eyes",
+         body: "shoulders dropped slightly, staring blankly",
+         body_close: "shoulders dropped, flat deadpan stare" }
+    2: { face: "completely expressionless deadpan, blank flat eyes, a sweat drop on the temple",
+         body: "head tilted with a long silent sigh",
+         body_close: "head tilted, one hand letting out a sigh near the mouth" }
+    3: { face: "utterly done with everything, white blank eyes, twitching flat mouth, big sweat drop",
+         body: "facepalming hard, whole body frozen in disbelief",
+         body_close: "facepalming with one hand, fingers covering the eyes" }
+
+紧张:
+  en: nervous
+  desc: 忐忑、不安
+  ref_view: bust_nervous
+  shots: [近景, 特写, 中景]
+  manpu: [汗滴, 集中线]
+  levels:
+    1: { face: "slightly widened eyes, tense small mouth, eyebrows drawn together",
+         body: "hands held close, shoulders a bit stiff",
+         body_close: "hands held close together, shoulders stiff" }
+    2: { face: "anxious wide eyes, biting lower lip, sweat on the temple",
+         body: "fists clenched near the chest, body hunched",
+         body_close: "fists clenched near the chest, biting lower lip" }
+    3: { face: "trembling huge eyes, chattering teeth, face pale with many sweat drops",
+         body: "knees knocking, gripping own arms tightly, shaking all over",
+         body_close: "both hands gripping the collar of the shirt, trembling" }
+
+委屈:
+  en: wronged
+  desc: 被冤枉、憋着
+  ref_view: bust_sad
+  shots: [近景, 特写, 中景]
+  manpu: [泪花, 阴云]
+  levels:
+    1: { face: "pouting slightly, eyebrows raised in the middle, eyes a little glossy",
+         body: "arms held close, looking aside",
+         body_close: "arms held close, looking aside with a small pout" }
+    2: { face: "big wronged pout, teary puppy eyes looking up, eyebrows knitted upward",
+         body: "hugging own arms, head lowered",
+         body_close: "hugging own arms, head lowered with teary eyes" }
+    3: { face: "huge teary eyes about to spill, trembling pouted lips, extremely aggrieved expression",
+         body: "curled up small, clutching knees, sniffling",
+         body_close: "clutching own sleeves, shoulders hunched, sniffling" }
+
+难过:
+  en: sad
+  desc: 低落、伤心
+  ref_view: bust_sad
+  shots: [近景, 特写, 中景]
+  manpu: [阴影线, 阴云]
+  levels:
+    1: { face: "mouth closed with slight downturn, eyes open at normal width gazing down",
+         body: "shoulders level, no hunching, hands still",
+         body_close: "head level, only the gaze lowered" }
+    2: { face: "eyebrows knitted upward, glossy eyes, trembling closed mouth",
+         body: "hugging knees, head lowered",
+         body_close: "one hand pressed flat on the chest, head lowered" }
+    3: { face: "eyes brimming with tears about to fall, quivering lips, deep frown",
+         body: "curled up, face half buried in arms",
+         body_close: "face half lowered, one arm wrapped around the shoulders" }
+
+哭:
+  en: crying with tears
+  desc: 流泪、掉泪
+  ref_view: bust_cry
+  shots: [近景, 特写]
+  manpu: [泪花, 阴影线]
+  levels:
+    1: { face: "a single small tear at one eye corner, mouth closed, eyebrows only slightly raised",
+         body: "standing upright, no sobbing motion, hands at sides",
+         body_close: "one small tear only, no wiping gesture" }
+    2: { face: "tears streaming down both cheeks, red-rimmed eyes, mouth open in a sob",
+         body: "both hands covering the mouth, shoulders shaking",
+         body_close: "both hands covering the mouth, tears streaming" }
+    3: { face: "flooding tears, eyes red and swollen, mouth wide open crying loudly",
+         body: "collapsed onto the desk, crying into both arms",
+         body_close: "face buried in both hands, tears slipping through fingers" }
+
+大哭:
+  en: wailing
+  desc: 放声大哭、泪崩
+  ref_view: bust_cry
+  shots: [特写, 近景, 中景]
+  manpu: [泪花, 灵魂出窍]
+  chibi_ok: true
+  levels:
+    1: { face: "loud sobbing, big tears dropping, mouth open in a cry",
+         body: "bending forward, hands covering face",
+         body_close: "bending forward, hands cupped below the eyes catching tears" }
+    2: { face: "howling with tears flying sideways, eyes shut tight, mouth wide open wailing",
+         body: "on both knees, fists rubbing eyes",
+         body_close: "fists rubbing both eyes, mouth wide open wailing" }
+    3: { face: "waterfall tears spraying like a fountain, face scrunched up, mouth opened impossibly wide in a wail",
+         body: "rolling on the floor crying, limbs flailing",
+         body_close: "both fists rubbing eyes hard, tears flying, mouth wailing wide" }
+
+生气:
+  en: angry
+  desc: 不高兴、生气
+  ref_view: bust_angry
+  shots: [近景, 特写, 中景]
+  manpu: [青筋, 怒气]
+  levels:
+    1: { face: "mouth closed and pressed flat, eyebrows only slightly drawn, eyes open normally",
+         body: "arms relaxed at sides, no crossed arms, no stomping",
+         body_close: "hands resting, no fist" }
+    2: { face: "clear frown, eyebrows slanted down, puffed angry cheeks, narrowed glaring eyes",
+         body: "hands on hips, leaning forward",
+         body_close: "hands on hips, leaning forward with a glare" }
+    3: { face: "furious scowl, sharply slanted eyebrows, gritted teeth, red face",
+         body: "fists clenched tight, stamping one foot",
+         body_close: "fist clenched tight and raised to the chest, glaring" }
+
+暴怒:
+  en: furious
+  desc: 气炸了
+  ref_view: bust_angry
+  shots: [特写, 近景, 仰视]
+  manpu: [青筋, 怒气, 集中线]
+  levels:
+    1: { face: "intense glare, deeply furrowed brows, teeth clenched",
+         body: "fists clenched at sides",
+         body_close: "fists clenched at chest level, glaring" }
+    2: { face: "rage-filled eyes, sharply slanted brows, mouth open shouting, anger vein on forehead",
+         body: "one fist raised, leaning forward aggressively",
+         body_close: "one fist raised beside the shoulder, shouting" }
+    3: { face: "trembling with rage, brows knotted tight, teeth gritted hard, face flushed red, big anger vein mark",
+         body: "both fists shaking with held-back anger, leaning forward",
+         body_close: "both fists clenched white near the chest, trembling with rage" }
+
+惊讶:
+  en: surprised
+  desc: 意外、吃惊
+  ref_view: bust_surprised
+  shots: [特写, 近景, 中景]
+  manpu: [集中线, 闪电背景]
+  levels:
+    1: { face: "eyes open slightly wider than neutral, eyebrows mildly raised, lips just parted",
+         body: "body still, no leaning back, no hands to face",
+         body_close: "no startle motion, only the eyes slightly wider" }
+    2: { face: "wide round eyes, raised eyebrows, mouth open in an O shape",
+         body: "one hand near the mouth, leaning back",
+         body_close: "one hand near the open mouth, leaning back" }
+    3: { face: "huge bulging eyes, jaw dropped wide open, eyebrows shot up high",
+         body: "jumping back, both hands on the cheeks",
+         body_close: "both hands on the cheeks, jaw dropped" }
+
+震惊:
+  en: shocked
+  desc: 不敢相信、世界观动摇
+  ref_view: bust_shock
+  shots: [特写, 近景]
+  manpu: [闪电背景, 集中线]
+  levels:
+    1: { face: "stunned stare, frozen mouth, raised eyebrows",
+         body: "body gone rigid",
+         body_close: "shoulders frozen, stunned stare" }
+    2: { face: "dilated pupils, face pale, mouth agape in disbelief",
+         body: "stumbling back a step, hands trembling",
+         body_close: "hands trembling near the chest, face pale" }
+    3: { face: "completely shattered expression, blank white eyes, jaw on the floor, face ashen",
+         body: "knees giving out, grabbing the desk for support",
+         body_close: "one hand gripping the desk edge, blank white eyes" }
+
+疲惫:
+  en: exhausted
+  desc: 累瘫、没电了
+  ref_view: bust_tired
+  shots: [中景, 近景, 特写]
+  manpu: [阴影线, 汗滴]
+  levels:
+    1: { face: "eyelids slightly heavy but eyes open, mouth closed with a small exhale",
+         body: "shoulders just a bit low, standing upright, no slumping",
+         body_close: "no yawning, no resting head on hand" }
+    2: { face: "heavy-lidded eyes with bags under them, yawning mouth, listless expression",
+         body: "slumped over the desk, arms dangling",
+         body_close: "cheek resting on one hand, yawning" }
+    3: { face: "completely drained, dead fish eyes, mouth hanging open, soul nearly leaving",
+         body: "lying flat on the desk, arms spread out",
+         body_close: "chin resting on the desk, dead fish eyes, arms hanging limp" }
+
+崩溃:
+  en: devastated
+  desc: 心态崩了、破防
+  ref_view: bust_shock
+  shots: [特写, 中景]
+  manpu: [灵魂出窍, 阴影线]
+  chibi_ok: true
+  levels:
+    1: { face: "a faint stiff smile, eyes open normally, mouth closed, no gloom lines",
+         body: "posture upright, no collapsing, no facepalm",
+         body_close: "a calm face with only a faint stiff smile" }
+    2: { face: "hollow despairing eyes, mouth open in a silent wail, face pale with gloom lines",
+         body: "sliding down the wall to the floor",
+         body_close: "both hands clutching the head, hollow eyes" }
+    3: { face: "blank white eyes, mouth open in a wail, face pale with vertical gloom lines",
+         body: "collapsed on the floor, limbs splayed",
+         body_close: "both hands clutching the head, elbows on the desk, wailing silently" }
+
+坚定:
+  en: determined
+  desc: 下定决心、燃起来了
+  ref_view: bust_determined
+  shots: [近景, 特写, 仰视]
+  manpu: [集中线, 闪光]
+  levels:
+    1: { face: "focused steady eyes, mouth set in a firm line",
+         body: "standing straight, fists lightly clenched",
+         body_close: "fists lightly clenched near the chest, steady eyes" }
+    2: { face: "burning determined eyes, sharply focused brows, confident set jaw",
+         body: "one fist raised to the chest, leaning forward",
+         body_close: "one fist raised to the chest, leaning forward" }
+    3: { face: "blazing eyes with glowing highlights, fearless grin, radiating determination",
+         body: "fist pumped into the air, coat flaring in the wind",
+         body_close: "one fist pumped up beside the shoulder, fearless grin" }

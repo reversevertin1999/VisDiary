@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>{{ sb.date }} · {{ sb.title }}</title>
+<style>
+  @font-face {
+    font-family: "DiaryFont";
+    src: url("{{ font_href }}");
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: {{ layout.width }}px;
+    height: {{ layout.height }}px;
+    position: relative;
+    background: #faf7ef;
+    font-family: "DiaryFont", serif;
+    color: #1a1a1a;
+  }
+  /* 页头 */
+  .header {
+    position: absolute; top: 0; left: {{ cfg.layout.margin }}px;
+    width: {{ layout.width - 2 * cfg.layout.margin }}px; height: {{ layout.header_height }}px;
+    display: flex; flex-direction: column; justify-content: center;
+    border-bottom: 3px solid #1a1a1a;
+  }
+  .header .date { font-size: 44px; font-weight: bold; }
+  .header .meta { font-size: 24px; color: #666; margin-top: 8px; }
+  .header .title { font-size: 30px; margin-top: 6px; }
+  /* 格子 */
+  .panel {
+    position: absolute;
+    border: 3px solid #1a1a1a;
+    background: #fff;
+    overflow: hidden;
+  }
+  .panel img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .narration {
+    position: absolute; top: 12px; left: 12px; max-width: 48%;
+    background: rgba(255,255,255,.93);
+    border: 2px solid #1a1a1a;
+    padding: 6px 12px; font-size: 24px; line-height: 1.35;
+  }
+  .bubble {
+    position: absolute; max-width: 46%;
+    background: #fff; border: 2px solid #1a1a1a; border-radius: 16px;
+    padding: 8px 14px; font-size: 24px; line-height: 1.35;
+    word-break: break-all;
+  }
+  .bubble.first  { top: 12px; right: 12px; }
+  .bubble.second { bottom: 12px; left: 12px; }
+  .bubble .who { font-size: 20px; color: #888; margin-right: 4px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="date">{{ sb.date }}</div>
+    <div class="meta">天气：{{ weather }} · 心情：{{ sb.mood }}</div>
+    <div class="title">{{ sb.title }}</div>
+  </div>
+  {% for item in items %}
+  <div class="panel" style="left: {{ item.box.x }}px; top: {{ item.box.y }}px;
+                            width: {{ item.box.w }}px; height: {{ item.box.h }}px;">
+    <img src="{{ panels_dir }}/{{ '%02d' % item.panel.id }}.png" alt="panel {{ item.panel.id }}">
+    {% if item.panel.narration %}
+    <div class="narration">{{ item.panel.narration }}</div>
+    {% endif %}
+    {% for d in item.panel.dialogue %}
+    <div class="bubble {{ 'first' if loop.first else 'second' }}">
+      {%- if d.speaker != protagonist %}<span class="who">{{ d.speaker }}</span>{% endif -%}
+      {{ d.text }}
+    </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</body>
+</html>

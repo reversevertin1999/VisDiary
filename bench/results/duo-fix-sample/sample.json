@@ -1,0 +1,26 @@
+[
+  {
+    "name": "一起吃饭聊天",
+    "hero_ok": true,
+    "side_ok": true,
+    "side_problems": []
+  },
+  {
+    "name": "赶ddl疲惫",
+    "hero_ok": false,
+    "side_ok": true,
+    "side_problems": []
+  },
+  {
+    "name": "实验跑通欢呼",
+    "hero_ok": true,
+    "side_ok": true,
+    "side_problems": []
+  },
+  {
+    "name": "逛街期待",
+    "hero_ok": true,
+    "side_ok": true,
+    "side_problems": []
+  }
+]

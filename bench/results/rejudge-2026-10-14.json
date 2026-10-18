@@ -1,0 +1,2939 @@
+{
+  "source": "2026-10-14.json",
+  "summary": {
+    "v1": {
+      "panels": 16,
+      "qc_error_count": 0,
+      "expression_top1_exact": {
+        "k": 10,
+        "n": 16,
+        "rate": 0.625,
+        "ci95": [
+          0.386,
+          0.815
+        ]
+      },
+      "expression_group_hit": {
+        "k": 14,
+        "n": 16,
+        "rate": 0.875,
+        "ci95": [
+          0.64,
+          0.965
+        ]
+      },
+      "expression_top2_hit": {
+        "k": 14,
+        "n": 16,
+        "rate": 0.875,
+        "ci95": [
+          0.64,
+          0.965
+        ]
+      },
+      "intensity_hit": {
+        "k": 14,
+        "n": 16,
+        "rate": 0.875,
+        "ci95": [
+          0.64,
+          0.965
+        ]
+      },
+      "overacted": {
+        "k": 0,
+        "n": 16,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.194
+        ]
+      },
+      "identity_pass": {
+        "k": 16,
+        "n": 16,
+        "rate": 1.0,
+        "ci95": [
+          0.806,
+          1.0
+        ]
+      }
+    },
+    "v2": {
+      "panels": 16,
+      "qc_error_count": 0,
+      "expression_top1_exact": {
+        "k": 10,
+        "n": 16,
+        "rate": 0.625,
+        "ci95": [
+          0.386,
+          0.815
+        ]
+      },
+      "expression_group_hit": {
+        "k": 16,
+        "n": 16,
+        "rate": 1.0,
+        "ci95": [
+          0.806,
+          1.0
+        ]
+      },
+      "expression_top2_hit": {
+        "k": 16,
+        "n": 16,
+        "rate": 1.0,
+        "ci95": [
+          0.806,
+          1.0
+        ]
+      },
+      "intensity_hit": {
+        "k": 16,
+        "n": 16,
+        "rate": 1.0,
+        "ci95": [
+          0.806,
+          1.0
+        ]
+      },
+      "overacted": {
+        "k": 0,
+        "n": 16,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.194
+        ]
+      },
+      "identity_pass": {
+        "k": 15,
+        "n": 16,
+        "rate": 0.938,
+        "ci95": [
+          0.717,
+          0.989
+        ]
+      }
+    }
+  },
+  "cells": [
+    {
+      "emotion": "开心",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v1",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "开心",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发为浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束清晰，画面右侧长发向下延伸。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "浅蓝色大眼，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "note": "眼睛半垂，外眼角略上挑，呈呆萌感。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分呈Q版大头与较小上身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "fail",
+            "feature_id": 7,
+            "note": "淡粉色腮红符合；未见独立的小点状鼻子，面部中央可见的是弧形笑嘴。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后方露出黄色尖角太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "整体使用深棕色粗描边，线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "开心",
+          "detected_top2": [
+            "开心",
+            "平静"
+          ],
+          "detected_intensity": 1,
+          "face_size": "large",
+          "head_bbox": [
+            0.04,
+            0.0,
+            0.88,
+            0.75
+          ],
+          "note": "嘴角轻轻上扬，双眼半垂，神态温和放松，属于轻微的开心。"
+        }
+      }
+    },
+    {
+      "emotion": "开心",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v2",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "开心",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海，脸侧长发束明显，画面右侧长直发向下延伸。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "头顶可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "浅蓝色大眼，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "note": "大眼呈半垂形态，眼尾略上挑，保留呆萌感；当前笑容使神态偏开心。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分符合Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "小点状鼻子，双颊有淡粉色腮红及短线。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后方露出黄色尖角冠状或太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "使用深棕色粗描边，线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "开心",
+          "detected_top2": [
+            "开心",
+            "期待"
+          ],
+          "detected_intensity": 2,
+          "face_size": "large",
+          "head_bbox": [
+            0.06,
+            0.0,
+            0.83,
+            0.7
+          ],
+          "note": "张嘴微笑、嘴角上扬，脸颊泛红，双手在胸前合拢。头部框含猫耳与头顶装饰，不含向下延伸的长发。"
+        }
+      }
+    },
+    {
+      "emotion": "开心",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v1",
+      "identity_pass": true,
+      "expression_fail": "weak",
+      "detected": "开心",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "头顶猫耳状结构",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "浅橙色三角猫耳状结构清晰，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "浅蓝色大眼，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "note": "大眼半垂，外眼角略上挑，保留呆萌感。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分符合Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "fail",
+            "feature_id": 7,
+            "note": "淡粉色腮红清晰；未见独立的小点状鼻子，面部中央下方为弧形微笑嘴。"
+          },
+          {
+            "name": "头后装饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后露出黄色尖角冠状、太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "采用深棕色粗描边，线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "开心",
+          "detected_top2": [
+            "开心",
+            "平静"
+          ],
+          "detected_intensity": 1,
+          "face_size": "large",
+          "head_bbox": [
+            0.11,
+            0.08,
+            0.76,
+            0.57
+          ],
+          "note": "嘴角轻微上扬，眼神放松，呈温和愉悦的表情。头部框包含猫耳与头部主体，不含黄色装饰及下垂长发。"
+        }
+      }
+    },
+    {
+      "emotion": "开心",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v2",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "大笑",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发为浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束清晰，画面右侧可见长发向下延伸。"
+          },
+          {
+            "name": "头顶猫耳状结构",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "浅橙色三角猫耳状结构带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "not_visible",
+            "feature_id": 4,
+            "note": "双眼闭合，无法核实虹膜颜色及眼内高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "fail",
+            "feature_id": 5,
+            "note": "双眼呈闭合的弧形笑眼，未呈现半垂大眼或困倦神态。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "呈Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "可见小点状鼻子和粉色腮红，腮红另有短线强调。"
+          },
+          {
+            "name": "黄色冠状或太阳状装饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后方可见黄色尖角太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "采用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "大笑",
+          "detected_top2": [
+            "大笑",
+            "开心"
+          ],
+          "detected_intensity": 3,
+          "face_size": "large",
+          "head_bbox": [
+            0.15,
+            0.07,
+            0.68,
+            0.53
+          ],
+          "note": "双眼笑闭、嘴巴大张，双颊泛红，双手高举，呈夸张欢笑状态。"
+        }
+      }
+    },
+    {
+      "emotion": "大笑",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v1",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "大笑",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "头顶猫耳状结构",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "not_visible",
+            "feature_id": 4,
+            "note": "双眼笑闭，无法判断虹膜颜色及眼内高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "fail",
+            "feature_id": 5,
+            "note": "双眼呈笑闭弧线，未呈现半垂大眼及困倦或呆萌神态。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见明显的Q版大头比例与圆润脸颊。"
+          },
+          {
+            "name": "面部细节",
+            "result": "fail",
+            "feature_id": 7,
+            "note": "可见粉色腮红，但未见参考图中的小点状鼻子。"
+          },
+          {
+            "name": "黄色头后装饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后露出黄色尖角冠状、太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "采用深棕色粗描边，线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "大笑",
+          "detected_top2": [
+            "大笑",
+            "开心"
+          ],
+          "detected_intensity": 2,
+          "face_size": "large",
+          "head_bbox": [
+            0.07,
+            0.01,
+            0.83,
+            0.74
+          ],
+          "note": "双眼笑闭、嘴巴明显张开，脸颊泛红，整体表现为愉快的大笑。"
+        }
+      }
+    },
+    {
+      "emotion": "大笑",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v2",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "大笑",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "头顶猫耳状结构",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "头顶可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "not_visible",
+            "feature_id": 4,
+            "note": "双眼闭合，无法核对浅蓝色虹膜及白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "not_visible",
+            "feature_id": 5,
+            "note": "双眼笑成弧线，无法核对睁眼时的半垂眼型与眼尾形态。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "呈Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "可见小点状鼻子和粉色腮红，腮红另有短线强调。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后露出黄色尖角冠状、太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "采用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "大笑",
+          "detected_top2": [
+            "大笑",
+            "开心"
+          ],
+          "detected_intensity": 3,
+          "face_size": "large",
+          "head_bbox": [
+            0.14,
+            0.02,
+            0.79,
+            0.64
+          ],
+          "note": "双眼弯曲闭合，嘴巴大幅张开，脸颊泛红，并有身体晃动线。"
+        }
+      }
+    },
+    {
+      "emotion": "大笑",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v1",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "大笑",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发为浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束及右侧向下延伸的长发均可见。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "双眼为浅蓝色，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "note": "保留半垂、眼尾略上挑的呆萌眼型；整体表情呈张嘴欢笑。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "大头与较小上身呈Q版比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "鼻子为小点状，双颊有淡粉色腮红及红晕短线。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后露出黄色尖角冠状装饰，顶端部分被画面裁切。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "采用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "大笑",
+          "detected_top2": [
+            "大笑",
+            "开心"
+          ],
+          "detected_intensity": 3,
+          "face_size": "large",
+          "head_bbox": [
+            0.07,
+            0.0,
+            0.85,
+            0.71
+          ],
+          "note": "嘴巴大幅张开，嘴角上扬，双颊泛红，呈夸张欢笑表情。头部框包含耳状结构和头顶装饰，不包含向下延伸的长发。"
+        }
+      }
+    },
+    {
+      "emotion": "大笑",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v2",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "大笑",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长发均可见。"
+          },
+          {
+            "name": "头顶猫耳状结构",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "浅橙色三角猫耳状结构具有棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "not_visible",
+            "feature_id": 4,
+            "note": "双眼闭合，无法核对虹膜颜色及眼内高光；眼角泪珠不算虹膜。"
+          },
+          {
+            "name": "眼型",
+            "result": "fail",
+            "feature_id": 5,
+            "note": "当前双眼为闭合笑弧，未呈现半垂大眼及困倦、呆萌神态。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "头部相对身体较大，脸颊圆润，符合Q版比例。"
+          },
+          {
+            "name": "面部细节",
+            "result": "fail",
+            "feature_id": 7,
+            "note": "粉色腮红明显，但鼻部区域未见参考图中的小点状鼻子。"
+          },
+          {
+            "name": "黄色冠状或太阳状装饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后方可见黄色尖角太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "主体使用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "大笑",
+          "detected_top2": [
+            "大笑",
+            "开心"
+          ],
+          "detected_intensity": 3,
+          "face_size": "large",
+          "head_bbox": [
+            0.12,
+            0.0,
+            0.71,
+            0.63
+          ],
+          "note": "双眼笑闭、嘴巴大张，眼角带泪，伴随拍桌和身体晃动的动作线。"
+        }
+      }
+    },
+    {
+      "emotion": "生气",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v1",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "生气",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "浅橙色三角猫耳状结构可见，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "浅蓝色大眼，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "fail",
+            "feature_id": 5,
+            "note": "半垂大眼及略上挑眼尾基本保留，但压眉、噘嘴呈生气感，不显困倦或呆萌。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分呈Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "fail",
+            "feature_id": 7,
+            "note": "淡粉腮红清楚可见，但未见独立的小点状鼻子；脸部中央下方为噘嘴线条。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后露出黄色尖角冠状或太阳状装饰，顶部略被画面裁切。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "使用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "生气",
+          "detected_top2": [
+            "生气",
+            "委屈"
+          ],
+          "detected_intensity": 2,
+          "face_size": "large",
+          "head_bbox": [
+            0.04,
+            0.0,
+            0.86,
+            0.73
+          ],
+          "note": "眉眼压低、眉间有皱纹，嘴巴噘起，呈明显不满。头部框包含猫耳和黄色头饰，不包含向下延伸的长发。"
+        }
+      }
+    },
+    {
+      "emotion": "生气",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v2",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "生气",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "头顶猫耳状结构",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "浅橙色三角猫耳状结构具有棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "浅蓝色大眼，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "fail",
+            "feature_id": 5,
+            "note": "保留半垂大眼，但眉眼明显斜压、怒视，未呈现困倦或呆萌感。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分保持Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "小点状鼻子与淡粉色腮红均可见。"
+          },
+          {
+            "name": "头后装饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后露出黄色尖角冠状或太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "使用深棕色粗描边，整体轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "生气",
+          "detected_top2": [
+            "生气",
+            "委屈"
+          ],
+          "detected_intensity": 2,
+          "face_size": "large",
+          "head_bbox": [
+            0.04,
+            0.06,
+            0.85,
+            0.67
+          ],
+          "note": "眉间紧皱、眉眼压低、嘴角下撇，双手叉腰，呈明显生气兼赌气感；头部框不含头后装饰及下垂长发。"
+        }
+      }
+    },
+    {
+      "emotion": "生气",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v1",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "生气",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金色至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "浅橙色三角猫耳状结构清晰，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "眼睛为浅蓝至青蓝色，带白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "fail",
+            "feature_id": 5,
+            "note": "半垂大眼和略上挑的眼尾保留，但眉眼紧蹙，呈生气感，未呈困倦或呆萌。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分符合Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "fail",
+            "feature_id": 7,
+            "note": "淡粉色腮红明显；未见独立的小点状鼻子，面部中央下方为嘟嘴线条。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后露出黄色尖角太阳状装饰，顶部略被画面裁切。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "采用深棕色粗描边，整体轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "生气",
+          "detected_top2": [
+            "生气",
+            "无语"
+          ],
+          "detected_intensity": 2,
+          "face_size": "large",
+          "head_bbox": [
+            0.06,
+            0.0,
+            0.85,
+            0.7
+          ],
+          "note": "眉头下压并向内收紧，眼睛半眯，嘴巴嘟起；怒意明显，未达到暴怒程度。头框包含猫耳和顶部装饰，不含垂落至下方的长发。"
+        }
+      }
+    },
+    {
+      "emotion": "生气",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v2",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "暴怒",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发为浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重刘海、脸侧长发束及画面右侧向下延伸的长发均可见。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "浅橙色三角猫耳状结构可见，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "眼睛为浅蓝色，眼内有白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "fail",
+            "feature_id": 5,
+            "note": "双眼受怒眉挤压而眯起、明显倾斜，没有困倦或呆萌感。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见大头小身的Q版比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "fail",
+            "feature_id": 7,
+            "note": "小点状鼻子符合；腮红明显加深并带密集红色斜线，不是淡粉色。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后方露出黄色尖角太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "角色使用深棕色粗描边，轮廓整体柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "暴怒",
+          "detected_top2": [
+            "暴怒",
+            "生气"
+          ],
+          "detected_intensity": 3,
+          "face_size": "large",
+          "head_bbox": [
+            0.085,
+            0.0,
+            0.8,
+            0.65
+          ],
+          "note": "怒眉紧压、咬牙、脸颊涨红，双拳握紧；伴有怒气符号、喷气及颤动线。"
+        }
+      }
+    },
+    {
+      "emotion": "难过",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v1",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "委屈",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金色至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海，脸侧有长发束，画面右侧长直发向下延伸。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "头顶可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "大眼呈浅蓝色，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "note": "眼睑半垂，眼尾略上挑，带困倦和呆萌感。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分符合Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "鼻子为极小的棕色短笔触，脸颊有淡粉色腮红。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后露出黄色尖角太阳状装饰，顶部略有裁切。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "采用深棕色粗描边，线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "委屈",
+          "detected_top2": [
+            "委屈",
+            "难过"
+          ],
+          "detected_intensity": 2,
+          "face_size": "large",
+          "head_bbox": [
+            0.06,
+            0.0,
+            0.83,
+            0.72
+          ],
+          "note": "半垂眼睑、下弯小嘴，神情低落，未见泪水。头部框包含猫耳及黄色头饰，不含向下延伸的长发。"
+        }
+      }
+    },
+    {
+      "emotion": "难过",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v2",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "难过",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发为浅橙金色至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "头顶有浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "眼睛呈浅蓝色，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "note": "保留半垂大眼与略上挑的眼尾；当前眉眼和泪水使表情偏悲伤。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "头部相对身体很大，脸颊圆润，符合Q版比例。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "鼻子为极小的短弯笔触，脸颊有淡粉色腮红。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后露出黄色尖角、环形太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "整体采用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "难过",
+          "detected_top2": [
+            "难过",
+            "委屈"
+          ],
+          "detected_intensity": 2,
+          "face_size": "large",
+          "head_bbox": [
+            0.07,
+            0.0,
+            0.83,
+            0.72
+          ],
+          "note": "眼睑低垂、眼角蓄泪，眉头上提，小嘴紧抿呈波浪状，抱膝蜷坐，显得难过且委屈。"
+        }
+      }
+    },
+    {
+      "emotion": "难过",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v1",
+      "identity_pass": true,
+      "expression_fail": "weak",
+      "detected": "委屈",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海，脸侧有长发束，画面右侧长直发向下延伸。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "浅蓝色大眼，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "note": "双眼半垂，外眼角略上挑，呈困倦、呆萌感。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分符合Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "鼻部以极小短线简化表现，双颊有淡粉色腮红。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后方露出黄色尖角冠状、太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "整体使用深棕色粗描边，线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "委屈",
+          "detected_top2": [
+            "委屈",
+            "疲惫"
+          ],
+          "detected_intensity": 1,
+          "face_size": "large",
+          "head_bbox": [
+            0.07,
+            0.0,
+            0.85,
+            0.72
+          ],
+          "note": "半垂眼、小幅抿嘴与歪头呈轻微委屈感，也显得疲倦；没有泪水或强烈表情。"
+        }
+      }
+    },
+    {
+      "emotion": "难过",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v2",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "哭",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发为浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束清晰，画面右侧长直发向下延伸。"
+          },
+          {
+            "name": "头顶猫耳状结构",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "头顶两侧可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "大眼呈浅蓝色，深色轮廓内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "note": "保留半垂大眼及略上挑的眼尾；泪水和眉嘴变化使表情偏委屈哭泣。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分符合Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "鼻子小巧点状，双颊有粉色腮红及斜线。"
+          },
+          {
+            "name": "头后装饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后露出黄色尖角太阳状装饰，顶部略被画面裁切。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "整体采用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "哭",
+          "detected_top2": [
+            "哭",
+            "委屈"
+          ],
+          "detected_intensity": 2,
+          "face_size": "large",
+          "head_bbox": [
+            0.07,
+            0.0,
+            0.8,
+            0.68
+          ],
+          "note": "双眼明显含泪并有泪珠溢出，眉毛呈愁态，嘴角下弯且微微颤抖；未见张嘴嚎哭。"
+        }
+      }
+    },
+    {
+      "emotion": "哭",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v1",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "大哭",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "大眼呈浅蓝色，眼内有白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "note": "保留半垂大眼及略上挑的眼尾；当前哭泣表情使困倦感减弱。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分呈Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "鼻子小巧近点状，脸颊有粉色腮红，并增加了哭泣时的红晕线。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后方露出黄色尖角太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "采用深棕色粗描边，整体线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "大哭",
+          "detected_top2": [
+            "大哭",
+            "哭"
+          ],
+          "detected_intensity": 3,
+          "face_size": "large",
+          "head_bbox": [
+            0.035,
+            0.0,
+            0.91,
+            0.735
+          ],
+          "note": "双眼有夸张成串泪水，嘴巴张开，眉形显得委屈。头部框包含猫耳和顶部装饰，不含向下延伸的长发。"
+        }
+      }
+    },
+    {
+      "emotion": "哭",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v2",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "大哭",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束及右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "浅橙色三角猫耳状结构带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "大眼呈浅蓝色，眼内有白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "note": "保留半垂大眼及略上挑的外眼角，当前表情明显在哭。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分呈Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "not_visible",
+            "feature_id": 7,
+            "note": "粉色腮红可见且较明显；双手遮住面部下方，点状鼻无法清楚核对。"
+          },
+          {
+            "name": "发饰/背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后露出黄色尖角冠状或太阳状装饰，顶部略有裁切。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "使用深棕色粗描边，整体线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "大哭",
+          "detected_top2": [
+            "大哭",
+            "哭"
+          ],
+          "detected_intensity": 3,
+          "face_size": "large",
+          "head_bbox": [
+            0.04,
+            0.0,
+            0.9,
+            0.76
+          ],
+          "note": "双眼流下夸张的大串泪水，双手捂在嘴边，脸颊泛红，并有颤抖线。"
+        }
+      }
+    },
+    {
+      "emotion": "哭",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v1",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "大哭",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发为浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "头顶两侧可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "浅蓝色大眼，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "note": "保留半垂大眼与略上挑的眼尾；当前哭泣神态仍带呆萌感。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分呈Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "fail",
+            "feature_id": 7,
+            "note": "有粉色腮红及明显红色排线，但未见参考图中的小点状鼻子。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后方露出黄色尖角太阳状装饰，顶部部分出框。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "使用深棕色粗描边，整体线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "大哭",
+          "detected_top2": [
+            "大哭",
+            "哭"
+          ],
+          "detected_intensity": 3,
+          "face_size": "large",
+          "head_bbox": [
+            0.075,
+            0.087,
+            0.82,
+            0.616
+          ],
+          "note": "双眼涌出夸张的大股泪水，嘴巴张开，眉眼显著下垂，呈强烈哭泣神态；头框不含头后装饰及向下延伸的长发。"
+        }
+      }
+    },
+    {
+      "emotion": "哭",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v2",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "大哭",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金色至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束均保留，画面右侧长发向下延伸。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "大眼呈浅蓝色，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "note": "保留半垂大眼与略上挑的眼尾；当前哭泣表情使神态偏悲伤。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "呈Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "鼻部为很小的点状，脸颊有粉色腮红及加强情绪的红色斜线。"
+          },
+          {
+            "name": "发饰/背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后方露出黄色尖角冠状、太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "使用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "大哭",
+          "detected_top2": [
+            "大哭",
+            "哭"
+          ],
+          "detected_intensity": 3,
+          "face_size": "large",
+          "head_bbox": [
+            0.05,
+            0.0,
+            0.87,
+            0.72
+          ],
+          "note": "双眼涌出大量泪水，张嘴哭喊，眉眼明显呈悲伤形态。"
+        }
+      }
+    },
+    {
+      "emotion": "惊讶",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v1",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "惊讶",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束均可见，画面右侧长直发向下延伸。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "头顶可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "浅蓝色大眼，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "fail",
+            "feature_id": 5,
+            "note": "双眼明显睁大、偏圆，并非参考图中的半垂困倦眼型。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分保持Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "鼻子为细小粉色短弧，脸颊有淡粉色腮红。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后方露出黄色尖角太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "整体采用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "惊讶",
+          "detected_top2": [
+            "惊讶",
+            "期待"
+          ],
+          "detected_intensity": 2,
+          "face_size": "large",
+          "head_bbox": [
+            0.075,
+            0.105,
+            0.815,
+            0.63
+          ],
+          "note": "双眼睁大、眉毛抬起，小嘴呈O形，最像明显的惊讶，也略带期待感。头部框按耳顶至下巴估计，不含后方装饰和垂落长发。"
+        }
+      }
+    },
+    {
+      "emotion": "惊讶",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v2",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "惊讶",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金色至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海，脸侧有长发束，画面右侧长直发向下延伸。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "浅蓝色大眼，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "fail",
+            "feature_id": 5,
+            "note": "双眼睁大且偏圆，没有半垂、困倦的眼型。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "头部相对上身明显偏大，脸颊圆润，符合Q版比例。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "小点状鼻子，脸颊有淡粉色腮红。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后方露出黄色尖角冠状或太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "使用深棕色粗描边，整体线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "惊讶",
+          "detected_top2": [
+            "惊讶",
+            "震惊"
+          ],
+          "detected_intensity": 2,
+          "face_size": "large",
+          "head_bbox": [
+            0.08,
+            0.0,
+            0.8,
+            0.81
+          ],
+          "note": "双眼睁大、眉毛抬起、嘴巴张成圆形，一只手举到嘴边，呈明显惊讶表情。"
+        }
+      }
+    },
+    {
+      "emotion": "惊讶",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v1",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "惊讶",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发为浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "头顶可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "浅蓝色大眼，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "fail",
+            "feature_id": 5,
+            "note": "双眼明显睁圆，未呈半垂、困倦的眼型。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分符合Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "鼻子为小点状，脸颊带淡粉色腮红。"
+          },
+          {
+            "name": "发饰/背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后方可见黄色尖角冠状或太阳状装饰，顶部略出画。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "整体使用深棕色粗描边，线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "惊讶",
+          "detected_top2": [
+            "惊讶",
+            "震惊"
+          ],
+          "detected_intensity": 2,
+          "face_size": "large",
+          "head_bbox": [
+            0.09,
+            0.0,
+            0.8,
+            0.7
+          ],
+          "note": "双眼睁圆，小嘴呈O形，旁有放射状提示符号。头框包含猫耳及头饰，不含向下延伸的长发。"
+        }
+      }
+    },
+    {
+      "emotion": "惊讶",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v2",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "震惊",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发为浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重刘海覆盖额头，脸侧有长发束，画面右侧长发向下延伸。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "大眼呈浅蓝色，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "fail",
+            "feature_id": 5,
+            "note": "眼尾略上挑，但双眼大幅睁开，不符合半垂、困倦的眼型。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "头部相对身体明显偏大，脸颊圆润，符合Q版比例。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "鼻子为小点状，双颊有淡粉色腮红与粉色短线。"
+          },
+          {
+            "name": "发饰/背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后方露出黄色尖角太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "主体采用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "震惊",
+          "detected_top2": [
+            "震惊",
+            "惊讶"
+          ],
+          "detected_intensity": 3,
+          "face_size": "large",
+          "head_bbox": [
+            0.09,
+            0.0,
+            0.79,
+            0.68
+          ],
+          "note": "双眼圆睁、嘴巴大张，双手举到脸颊旁，呈夸张的震惊反应。头部框包含猫耳及顶部装饰，不含向下延伸的全部长发。"
+        }
+      }
+    },
+    {
+      "emotion": "疲惫",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v1",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "疲惫",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金色至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长发均可见。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "头顶可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "双眼呈浅蓝色，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "note": "大眼半垂，眼尾略上挑，显得困倦。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分符合Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "fail",
+            "feature_id": 7,
+            "note": "淡粉色腮红可见，但面部未见要求的小点状鼻子。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后方露出黄色尖角太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "采用深棕色粗描边，线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "疲惫",
+          "detected_top2": [
+            "疲惫",
+            "无语"
+          ],
+          "detected_intensity": 2,
+          "face_size": "large",
+          "head_bbox": [
+            0.07,
+            0.067,
+            0.82,
+            0.62
+          ],
+          "note": "眼睑明显下垂、嘴巴微张，最像疲惫，其次略显无语；头部框不含后方黄色装饰和向下延伸的长发。"
+        }
+      }
+    },
+    {
+      "emotion": "疲惫",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v2",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "疲惫",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发为浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束清晰，画面右侧长发向下延伸。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "头顶可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "双眼为浅蓝色，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "note": "大眼半垂，外眼角略上挑，呈明显困倦感。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分呈Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "鼻子是很小的短弯线，与参考图一致；脸颊有淡粉色腮红。"
+          },
+          {
+            "name": "发饰/背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后露出黄色尖角冠状或太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "整体使用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "疲惫",
+          "detected_top2": [
+            "疲惫",
+            "无语"
+          ],
+          "detected_intensity": 2,
+          "face_size": "large",
+          "head_bbox": [
+            0.08,
+            0.06,
+            0.79,
+            0.61
+          ],
+          "note": "眼皮半垂、眼下有阴影，嘴张开似打哈欠，身体趴在桌面且双臂下垂；疲惫最明显。头框包含猫耳和主体头发，不含后方长发末端及黄色装饰。"
+        }
+      }
+    },
+    {
+      "emotion": "疲惫",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v1",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "疲惫",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发为浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海，脸侧长发束清晰，画面右侧长直发向下延伸。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "眼睛呈浅蓝色，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "note": "大眼半垂，外眼角略挑，呈困倦神态。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分符合Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "小点状鼻子清晰，双颊有淡粉色腮红。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后露出黄色尖角太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "采用深棕色粗描边，整体线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "疲惫",
+          "detected_top2": [
+            "疲惫",
+            "无语"
+          ],
+          "detected_intensity": 2,
+          "face_size": "large",
+          "head_bbox": [
+            0.055,
+            0.0,
+            0.83,
+            0.72
+          ],
+          "note": "双眼半睁、上眼睑低垂，嘴巴微张，头部倾斜，显得疲倦而有些呆滞。"
+        }
+      }
+    },
+    {
+      "emotion": "疲惫",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v2",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "疲惫",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束清晰；长发随躺姿向画面右下方延伸。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "眼睛为浅蓝色，保留白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "note": "大眼明显半垂，外眼角略挑，呈困倦神态。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "头部相对身体很大，脸颊圆润，符合Q版比例。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "鼻子为极小点状短弧，双颊有淡粉色腮红。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后方明显露出黄色尖角太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "使用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "疲惫",
+          "detected_top2": [
+            "疲惫",
+            "崩溃"
+          ],
+          "detected_intensity": 3,
+          "face_size": "large",
+          "head_bbox": [
+            0.05,
+            0.08,
+            0.75,
+            0.61
+          ],
+          "note": "眼皮低垂、嘴巴大张、身体摊躺，嘴边有灵魂飘出的夸张符号，呈精疲力竭状态。"
+        }
+      }
+    },
+    {
+      "emotion": "崩溃",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v1",
+      "identity_pass": true,
+      "expression_fail": "category",
+      "detected": "大哭",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发为浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、两侧长发束清晰，画面右侧长直发向下延伸。"
+          },
+          {
+            "name": "头顶猫耳状结构",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "头顶可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "浅蓝色大眼，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "fail",
+            "feature_id": 5,
+            "note": "保留半垂大眼与略挑眼尾，但当前神态明显为哭泣，不符合困倦或呆萌这一部分描述。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分保持Q版大头小身比例，脸颊圆润；下半身未入镜。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "鼻子小巧，呈短折线状；双颊有粉色腮红与红晕线。"
+          },
+          {
+            "name": "头后装饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后露出黄色尖角太阳状装饰，顶部部分被画面裁切。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "主体采用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "大哭",
+          "detected_top2": [
+            "大哭",
+            "委屈"
+          ],
+          "detected_intensity": 3,
+          "face_size": "large",
+          "head_bbox": [
+            0.04,
+            0.09,
+            0.87,
+            0.66
+          ],
+          "note": "双眼大量流泪，泪水沿脸颊成串滑落，眉部紧蹙，嘴巴张开且轮廓颤曲。"
+        }
+      }
+    },
+    {
+      "emotion": "崩溃",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v2",
+      "identity_pass": true,
+      "expression_fail": null,
+      "detected": "崩溃",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束和画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "浅蓝色大眼，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "note": "大眼半垂、眼尾略上挑，呈明显疲惫感。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分符合Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "鼻子小巧近点状，双颊有淡粉色腮红。"
+          },
+          {
+            "name": "发饰/背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后方露出黄色尖角冠状或太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "使用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "崩溃",
+          "detected_top2": [
+            "崩溃",
+            "疲惫"
+          ],
+          "detected_intensity": 3,
+          "face_size": "large",
+          "head_bbox": [
+            0.05,
+            0.0,
+            0.86,
+            0.72
+          ],
+          "note": "嘴巴大张且形状扭曲，眉毛紧蹙，眼睑低垂；额头蓝紫色竖线、眼下阴影及周围颤抖线强化了崩溃和疲惫感。"
+        }
+      }
+    },
+    {
+      "emotion": "崩溃",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v1",
+      "identity_pass": true,
+      "expression_fail": "category",
+      "detected": "大哭",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金至蜜桃金色，与参考图一致。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束及画面右侧向下延伸的长直发均可见。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "头顶可见浅橙色三角猫耳状结构，带棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "pass",
+            "feature_id": 4,
+            "note": "大眼呈浅蓝色，眼内有明显白色高光。"
+          },
+          {
+            "name": "眼型",
+            "result": "pass",
+            "feature_id": 5,
+            "note": "保留半垂大眼和略上挑的眼尾；哭泣表情使困倦感减弱。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分呈Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "鼻子为极小的浅粉色短线，双颊带粉色腮红。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后方露出黄色尖角太阳状装饰，顶部略被画框裁切。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "整体采用深棕色粗描边，线条柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "大哭",
+          "detected_top2": [
+            "大哭",
+            "委屈"
+          ],
+          "detected_intensity": 3,
+          "face_size": "large",
+          "head_bbox": [
+            0.03,
+            0.0,
+            0.92,
+            0.72
+          ],
+          "note": "双眼蓄泪，多股泪水沿脸颊流下，眉形委屈，嘴巴下弯呈颤抖状。"
+        }
+      }
+    },
+    {
+      "emotion": "崩溃",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v2",
+      "identity_pass": false,
+      "expression_fail": null,
+      "detected": "崩溃",
+      "result": {
+        "images_received": 2,
+        "judgeable": true,
+        "unjudgeable_reason": "",
+        "character_visible": true,
+        "has_text": false,
+        "checks": [
+          {
+            "name": "发色",
+            "result": "pass",
+            "feature_id": 1,
+            "note": "长发呈浅橙金至蜜桃金色。"
+          },
+          {
+            "name": "发型",
+            "result": "pass",
+            "feature_id": 2,
+            "note": "厚重齐刘海、脸侧长发束清晰，右侧长发随躺姿向右下铺展。"
+          },
+          {
+            "name": "头顶元素",
+            "result": "pass",
+            "feature_id": 3,
+            "note": "可见浅橙色三角猫耳状结构及棕色描边。"
+          },
+          {
+            "name": "眼睛颜色",
+            "result": "fail",
+            "feature_id": 4,
+            "note": "双眼采用夸张留白，未呈现浅蓝色虹膜；白色高光主要出现在眼角泪珠上。"
+          },
+          {
+            "name": "眼型",
+            "result": "fail",
+            "feature_id": 5,
+            "note": "双眼明显睁大，不是半垂、困倦或呆萌的眼型。"
+          },
+          {
+            "name": "脸部比例",
+            "result": "pass",
+            "feature_id": 6,
+            "note": "可见部分符合Q版大头小身比例，脸颊圆润。"
+          },
+          {
+            "name": "面部细节",
+            "result": "pass",
+            "feature_id": 7,
+            "note": "小点状鼻子与淡粉色腮红均可见。"
+          },
+          {
+            "name": "发饰或背景头饰",
+            "result": "pass",
+            "feature_id": 8,
+            "note": "头后方露出黄色尖角冠状、太阳状装饰。"
+          },
+          {
+            "name": "线条特征",
+            "result": "pass",
+            "feature_id": 9,
+            "note": "整体使用深棕色粗描边，轮廓柔软圆润。"
+          }
+        ],
+        "expression": {
+          "detected_emotion": "崩溃",
+          "detected_top2": [
+            "崩溃",
+            "大哭"
+          ],
+          "detected_intensity": 3,
+          "face_size": "large",
+          "head_bbox": [
+            0.07,
+            0.05,
+            0.74,
+            0.58
+          ],
+          "note": "双眼留白、额头蓝紫色竖线、嘴巴大张，眼角带泪，呈夸张失控哭喊感。"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>VisDiary · 小玛丽漫画</title>
+<style>
+  :root { --bg:#faf7ef; --line:#d8d2c4; --ink:#2b2b2b; --acc:#e07a5f; }
+  * { box-sizing: border-box; }
+  body { font-family: "LXGW WenKai", "Noto Sans CJK SC", sans-serif; margin:0;
+         background:var(--bg); color:var(--ink); }
+  header { display:flex; gap:16px; align-items:center; padding:12px 24px;
+           border-bottom:2px solid var(--ink); background:#fff; }
+  header h1 { font-size:20px; margin:0; }
+  nav button { border:1px solid var(--ink); background:#fff; padding:6px 14px;
+               border-radius:16px; cursor:pointer; font-size:14px; }
+  nav button.on { background:var(--ink); color:#fff; }
+  main { max-width:1080px; margin:20px auto; padding:0 16px; }
+  textarea { width:100%; height:320px; font-family:inherit; font-size:14px;
+             border:1px solid var(--line); padding:10px; border-radius:6px; }
+  button.pri { background:var(--acc); color:#fff; border:none; padding:8px 18px;
+               border-radius:16px; cursor:pointer; font-size:15px; }
+  button.sec { background:#fff; border:1px solid var(--ink); padding:5px 12px;
+               border-radius:14px; cursor:pointer; font-size:13px; margin:2px; }
+  .log { background:#111; color:#9f9; font-size:12px; padding:10px; border-radius:6px;
+         white-space:pre-wrap; max-height:220px; overflow:auto; }
+  #page-wrap { position:relative; display:inline-block; }
+  #page-wrap img { max-width:100%; display:block; border:2px solid var(--ink); }
+  .hot { position:absolute; border:2px dashed transparent; cursor:pointer; }
+  .hot:hover { border-color:var(--acc); background:rgba(224,122,95,.12); }
+  dialog { border:2px solid var(--ink); border-radius:10px; padding:16px; width:560px; }
+  dialog::backdrop { background:rgba(0,0,0,.45); }
+  select, input[type=range] { width:100%; padding:6px; margin:4px 0 12px; }
+  label { font-size:13px; color:#666; }
+  .tag { font-size:12px; padding:2px 8px; border-radius:10px; background:#eee; }
+  .bad { color:#c0392b; } .ok { color:#27ae60; }
+  table { border-collapse:collapse; width:100%; font-size:13px; }
+  td,th { border:1px solid var(--line); padding:6px; text-align:left; }
+  .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+  .grid figure { margin:0; border:1px solid var(--line); padding:4px; }
+  .grid img { width:100%; display:block; }
+  .grid figcaption { font-size:12px; text-align:center; padding:2px; }
+  .vrow { display:flex; gap:10px; align-items:center; margin-top:8px; }
+  .vrow img { width:150px; display:block; border:1px solid var(--line); }
+</style>
+</head>
+<body>
+<header>
+  <h1>VisDiary</h1>
+  <nav>
+    <button data-tab="diary" class="on">日记</button>
+    <button data-tab="gen">生成</button>
+    <button data-tab="comic">漫画</button>
+    <button data-tab="book">漫画册</button>
+    <button data-tab="chars">角色</button>
+    <button data-tab="usage">用量</button>
+  </nav>
+  <span id="budget-pill" class="tag" style="margin-left:auto"></span>
+</header>
+<main>
+<section id="tab-diary">
+  <p><select id="diary-list" onchange="loadDiary()"></select>
+     <button class="sec" onclick="newDiary()">＋新建</button>
+     <button class="sec" onclick="loadDiaryList()">刷新</button>
+     <button class="pri" onclick="saveDiary()">保存</button></p>
+  <textarea id="diary-text" placeholder="---
+date: 2026-10-15
+weather: 晴
+---
+## 09:30
+今天的日记……
+<!-- vd: 开心 2, 不要大笑 -->
+"></textarea>
+</section>
+
+<section id="tab-gen" hidden>
+  <p>角色 <select id="gen-char"></select>
+     日记 <select id="gen-date"></select>
+     <label><input type="checkbox" id="gen-reuse"> --reuse 复用分镜</label>
+     <button class="pri" onclick="startRender()">开始生成</button>
+     <button class="sec" id="gen-all-btn" onclick="generateAll()">一键生成所有未生成的</button></p>
+  <div id="gen-grid" class="grid" style="margin-bottom:10px"></div>
+  <div class="log" id="gen-log">等待开始……</div>
+</section>
+
+<section id="tab-comic" hidden>
+  <p>角色 <select id="comic-char" onchange="loadComicDates()"></select>
+     日期 <select id="comic-date" onchange="loadComic()"></select>
+     <button class="sec" onclick="loadComicDates()">刷新</button>
+     <a id="comic-dl" class="sec" style="text-decoration:none" download>下载 PNG</a></p>
+  <div id="comic-empty">还没有生成结果。先去「生成」。</div>
+  <div id="page-wrap" hidden><img id="page-img" alt="整页漫画">
+    <div id="hotspots"></div></div>
+</section>
+
+<section id="tab-book" hidden>
+  <p>角色 <select id="book-char" onchange="loadBook()"></select>
+     <input type="month" id="book-month" onchange="loadBook()" style="padding:6px">
+     <button class="sec" onclick="exportBookPdf()">导出本月 PDF</button></p>
+  <div id="book-onthisday"></div>
+  <svg id="mood-svg" width="100%" height="90" style="display:block;margin:6px 0"></svg>
+  <div id="book-cal" style="display:grid;grid-template-columns:repeat(7,1fr);gap:6px"></div>
+  <div id="book-empty" hidden>这个月还没有漫画。</div>
+  <div id="book-reader" hidden>
+    <p style="text-align:center"><button class="sec" onclick="bookPage(-1)">← 前一天</button>
+       <b id="reader-date"></b> <span id="reader-title" class="tag"></span>
+       <button class="sec" onclick="bookPage(1)">后一天 →</button>
+       <button class="sec" onclick="closeReader()">关闭</button></p>
+    <img id="reader-img" style="max-width:100%;display:block;margin:0 auto;border:2px solid var(--ink)">
+  </div>
+</section>
+
+<section id="tab-chars" hidden>
+  <p><select id="char-list" onchange="loadChar()"></select>
+     <button class="sec" onclick="approveChar()">approve</button></p>
+  <div id="char-info"></div>
+</section>
+
+<section id="tab-usage" hidden>
+  <table id="usage-table"></table>
+</section>
+</main>
+
+<dialog id="editor">
+  <h3 style="margin-top:0">第 <span id="ed-pid"></span> 格 <span id="ed-cur" class="tag"></span></h3>
+  <label>情绪（不选 = 不改）</label>
+  <select id="ed-emotion"><option value="">（保持不变）</option></select>
+  <label>强度：<span id="ed-int-v"></span></label>
+  <input type="range" id="ed-intensity" min="0" max="3" value="0">
+  <label>导演备注（追加进 face_en，可留空）</label>
+  <input id="ed-note" style="width:100%;padding:6px;margin-bottom:12px">
+  <button class="pri" onclick="applyEdit()">改分镜并重画（2 候选）</button>
+  <button class="sec" onclick="redrawOnly()">只重画不改分镜（2 候选）</button>
+  <div id="ed-job" class="log" style="display:none"></div>
+  <div id="ed-meta" style="font-size:12px;margin-top:10px"></div>
+  <div id="ed-variants"></div>
+  <p style="text-align:right"><button class="sec" onclick="editor.close()">关闭</button></p>
+</dialog>
+
+<script>
+const EMOTIONS = ["平静","开心","大笑","感动","得意","期待","害羞","思考","无语","紧张",
+  "委屈","难过","哭","大哭","生气","暴怒","惊讶","震惊","疲惫","崩溃","坚定"];
+const $ = id => document.getElementById(id);
+const localDate = () => { const d = new Date(); d.setMinutes(d.getMinutes() - d.getTimezoneOffset()); return d.toISOString().slice(0,10); };
+let CUR = {date:null, layout:null, metas:null, storyboard:null};
+const editor = $("editor");
+
+for (const b of document.querySelectorAll("nav button"))
+  b.onclick = () => {
+    document.querySelectorAll("nav button").forEach(x=>x.classList.remove("on"));
+    b.classList.add("on");
+    for (const s of document.querySelectorAll("main section")) s.hidden = true;
+    $("tab-" + b.dataset.tab).hidden = false;
+    if (b.dataset.tab==="diary") loadDiaryList();
+    if (b.dataset.tab==="gen") loadChars().then(()=>loadGenDates());
+    if (b.dataset.tab==="comic") { if(!$("comic-char").options.length) loadChars().then(loadComicDates); else loadComicDates(); }
+    if (b.dataset.tab==="book") { if(!$("book-char").options.length) loadChars().then(loadBook); else loadBook(); }
+    if (b.dataset.tab==="chars") loadCharList();
+    if (b.dataset.tab==="usage") loadUsage();
+  };
+
+async function jget(u){ const r=await fetch(u); if(!r.ok) throw (await r.json()).detail||r.status; return r.json(); }
+async function jpost(u,body){ const r=await fetch(u,{method:"POST",headers:{"Content-Type":"application/json","X-VisDiary":"1"},body:body?JSON.stringify(body):null}); const d=await r.json().catch(()=>({})); if(!r.ok) throw d.detail||r.status; return d; }
+async function jput(u,body){ const r=await fetch(u,{method:"PUT",headers:{"Content-Type":"application/json","X-VisDiary":"1"},body:JSON.stringify(body)}); const d=await r.json().catch(()=>({})); if(!r.ok) throw d.detail||r.status; return d; }
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+async function loadDiaryList(){
+  const ds = await jget("/api/diaries");
+  const keep = $("diary-list").value;
+  $("diary-list").innerHTML = ds.map(d=>`<option>${esc(d.date)}</option>`).join("");
+  if (ds.some(d=>d.date===keep)) $("diary-list").value = keep;
+  if (ds.length) loadDiary();
+}
+function newDiary(){
+  const d = prompt("新日记的日期（YYYY-MM-DD）：", localDate());
+  if (!d) return;
+  $("diary-text").value =
+`---
+date: ${d}
+weather: 晴
+title: 
+---
+
+## 上午
+
+
+## 晚上
+
+<!-- vd: 开心 2 -->`;
+  $("diary-list").value = "";   // 未保存前不对应任何已有项
+  $("diary-text").focus();
+}
+
+async function loadDiary(){
+  const d = $("diary-list").value; if(!d) return;
+  try { const r = await jget(`/api/diaries/${d}/raw`); $("diary-text").value = r.content; }
+  catch(e){ $("diary-text").value = ""; }
+}
+async function saveDiary(){
+  const m = $("diary-text").value.match(/^date:\s*(\S+)/m);
+  const date = m ? m[1] : localDate();
+  await jput(`/api/diaries/${date}`, {content:$("diary-text").value});
+  alert("已保存 " + date);
+  await loadDiaryList();
+  $("diary-list").value = date;
+}
+
+async function loadChars(){
+  const cs = await jget("/api/characters");
+  for (const sel of ["gen-char", "comic-char", "book-char"]) {
+    const el = $(sel); if (!el) continue;
+    const keep = el.value;
+    el.innerHTML = cs.map(c=>`<option>${esc(c.id)}</option>`).join("");
+    if (keep) el.value = keep;
+  }
+  CUR.char = $("gen-char").value;
+}
+let lastJobResult = null;
+function watchJob(id, logEl, onDone, onPanel){
+  logEl.style.display = "block"; logEl.textContent = "";
+  const es = new EventSource(`/api/jobs/${id}/events`);
+  es.onmessage = e => {
+    const t = JSON.parse(e.data);
+    if (t.step && t.step.startsWith("panel_ready:") && onPanel) {
+      onPanel(t.step.split(":")[1]);
+    }
+    if (t.end) {
+      es.close();
+      logEl.textContent += "\n" + (t.end==="done" ? "✅ 完成" : "❌ " + (t.error||"失败"));
+      if (t.result) lastJobResult = t.result;
+      if (onDone) onDone(t.end==="done");
+      loadUsagePill();
+    } else logEl.textContent += t.step + "\n";
+  };
+  es.onerror = () => { es.close(); logEl.textContent += "\n（连接断开）";
+    if (onDone) onDone(false); };   // P0-6：断线也要复位
+}
+let RENDERING = false;
+async function loadGenDates(keepDate){
+  const ds = await jget("/api/diaries");
+  const keep = keepDate ?? $("gen-date").value;
+  $("gen-date").innerHTML = ds.map(d=>`<option>${esc(d.date)}</option>`).join("");
+  if (ds.some(d=>d.date===keep)) $("gen-date").value = keep;
+}
+
+async function startRender(){
+  const date = $("gen-date").value || $("diary-list").value;
+  if(!date){ alert("先选一篇日记"); return; }
+  if (RENDERING) { alert("上一个任务还在跑（看下方进度），稍等"); return; }
+  RENDERING = true;
+  const btn = document.querySelector('#tab-gen button.pri');
+  btn.disabled = true; btn.textContent = "生成中…";
+  let r;
+  try {
+    r = await jpost(`/api/render/${date}?character=${$("gen-char").value}&reuse=${$("gen-reuse").checked}`);
+  } catch(e) { RENDERING = false; btn.disabled = false; btn.textContent = "开始生成";
+    alert("提交失败：" + e); return; }
+  $("gen-grid").innerHTML = "";
+  watchJob(r.job_id, $("gen-log"), ok => {
+      RENDERING = false; btn.disabled = false; btn.textContent = "开始生成";
+      CUR.date = date; loadComicDates();
+      if (!ok) alert("生成失败，看日志");
+    },
+    pid => {   // C5：一格出图就填缩略图
+      $("gen-grid").insertAdjacentHTML("beforeend",
+        `<figure><img src="/api/pages/${date}/panels/${pid}.png?character=${$("gen-char").value}&t=${Date.now()}">
+         <figcaption>第 ${pid} 格</figcaption></figure>`);
+    });
+}
+
+async function loadComicDates(){
+  const ps = await jget(`/api/pages${$("comic-char")?.value ? `?character=${$("comic-char").value}` : ""}`);
+  const keep = $("comic-date").value;
+  const dates = [...new Set(ps.map(p=>p.date))].sort();
+  $("comic-date").innerHTML = dates.map(d=>`<option>${esc(d)}</option>`).join("");
+  if (dates.some(d=>d===keep)) $("comic-date").value = keep;
+  if (dates.length) loadComic(); else { $("comic-empty").hidden=false; $("page-wrap").hidden=true; }
+}
+async function loadComic(){
+  const date = $("comic-date").value; if(!date) return;
+  const ch = $("comic-char")?.value || "";
+  CUR.char = ch; CUR.date = date;
+  let p;
+  try { p = await jget(`/api/pages/${date}?character=${ch}`); }
+  catch(e){ $("comic-empty").hidden=false; $("page-wrap").hidden=true; return; }
+  $("comic-empty").hidden=true; $("page-wrap").hidden=false;
+  CUR.layout = p.layout; CUR.metas = p.metas; CUR.storyboard = p.storyboard;
+  const t = Date.now();
+  $("page-img").src = `/api/pages/${date}/page.png?character=${ch}&t=${t}`;
+  $("comic-dl").href = `/api/pages/${date}/page.png?character=${ch}&t=${t}`;
+  const img = $("page-img");
+  const place = () => {
+    const s = img.clientWidth / p.layout.width;
+    const old = $("hotspots"); const hs = document.createElement("div"); hs.id = "hotspots";
+    for (const b of p.layout.panels) {
+      const d = document.createElement("div");
+      d.className = "hot";
+      d.style.left = b.x*s+"px"; d.style.top = b.y*s+"px";
+      d.style.width = b.w*s+"px"; d.style.height = b.h*s+"px";
+      d.onclick = () => openEditor(b.id);
+      hs.appendChild(d);
+    }
+    old.replaceWith(hs);
+  };
+  if (img.complete && img.naturalWidth) place(); else img.onload = place;
+}
+
+function openEditor(pid){
+  $("ed-pid").textContent = pid;
+  const acting = CUR.storyboard.panels.find(x=>x.id===pid)?.acting || {};
+  $("ed-cur").textContent = `${acting.emotion||"?"} ${acting.intensity||"?"}`;
+  $("ed-emotion").innerHTML = `<option value="">（保持不变）</option>` +
+    EMOTIONS.map(e=>`<option${e===acting.emotion?" selected":""}>${e}</option>`).join("");
+  $("ed-intensity").value = 0;
+  $("ed-int-v").textContent = `当前 ${acting.intensity ?? "-"}（拖到 1-3 修改）`;
+  $("ed-intensity").oninput = () => {
+    const v = +$("ed-intensity").value;
+    $("ed-int-v").textContent = v === 0 ? `当前 ${acting.intensity ?? "-"}` : `改为 ${v}`;
+  };
+  $("ed-note").value = "";
+  const meta = CUR.metas[String(pid)] || {};
+  $("ed-meta").innerHTML = `参考图：${esc((meta.refs||[]).map(r=>r.view).join(", ")||"无")}<br>` +
+    `质检：${meta.flagged?'<span class=bad>被标记</span>':'<span class=ok>通过</span>'}` +
+    (meta.locked?` · 🔒已锁定`:"");
+  $("ed-variants").innerHTML = "";
+  $("ed-job").style.display = "none"; $("ed-job").textContent = "";
+  editor.showModal();
+}
+async function doRedraw(){
+  const pid = $("ed-pid").textContent, date = CUR.date;
+  const r = await jpost(`/api/pages/${date}/panels/${pid}/redraw?variants=2&character=${CUR.char || "xiaomali"}`);
+  watchJob(r.job_id, $("ed-job"), async ok => {
+    const p = await jget(`/api/pages/${date}?character=${CUR.char || "xiaomali"}`);
+    CUR.metas = p.metas;
+    const meta = p.metas[String(pid)] || {};
+    $("ed-variants").innerHTML = (meta.variants||[]).map(v=>
+      `<div class="vrow">
+         <img src="/api/pages/${date}/panels/${pid}/variants/${v.variant}.png?character=${CUR.char || "xiaomali"}&t=${Date.now()}">
+         <div><button class="sec" onclick='pickVariant(${pid},"${v.variant}")'>选 ${v.variant}</button><br>
+         <span class="tag">${v.identity_pass?"身份✓":"身份✗"}
+         ${v.expression_fail==null?"表情✓":"表情✗:"+esc(v.expression_fail)}</span></div>
+       </div>`).join("") || "<i>没有候选（可能直接复用了旧图）</i>";
+  });
+}
+async function applyEdit(){
+  const pid = $("ed-pid").textContent, date = CUR.date;
+  const body = {};
+  if ($("ed-emotion").value) body.emotion = $("ed-emotion").value;
+  if (+$("ed-intensity").value > 0) body.intensity = +$("ed-intensity").value;
+  if ($("ed-note").value.trim()) body.note = $("ed-note").value.trim();
+  if (Object.keys(body).length) {
+    try {
+      const r = await jpost(`/api/pages/${date}/panels/${pid}/edit?character=${CUR.char || "xiaomali"}`, body);
+      // P0-1：等 edit job 结束再重画，避免抢跑
+      watchJob(r.job_id, $("ed-job"), ok => {
+        if (!ok) { alert("改分镜失败"); return; }
+        const changed = (lastJobResult && lastJobResult.changed) || [];
+        if (changed.length === 0) alert("没有实际改动，走\"只重画\"");
+        doRedraw();
+      });
+    } catch(e) { alert("改分镜失败：" + e); }
+  } else doRedraw();
+}
+async function redrawOnly(){ doRedraw(); }
+async function pickVariant(pid, variant){
+  const r = await jpost(`/api/pages/${CUR.date}/panels/${pid}/pick?variant=${variant}&character=${CUR.char || "xiaomali"}`);
+  watchJob(r.job_id, $("ed-job"), ok => { editor.close(); loadComic(); });
+}
+
+async function loadCharList(){
+  const cs = await jget("/api/characters");
+  const keep = $("char-list").value;
+  $("char-list").innerHTML = cs.map(c=>`<option>${esc(c.id)}</option>`).join("");
+  if (keep) $("char-list").value = keep;
+  loadChar();
+}
+async function loadChar(){
+  const c = await jget(`/api/characters/${$("char-list").value}`);
+  const approved = Object.values(c.sheets).some(s=>s.approved);
+  $("char-info").innerHTML = `
+    <p><b>${esc(c.name)}</b>（${esc(c.id)}）· 画风 ${esc(c.style_detected)}（${c.style_confidence}）
+       ${approved?'<span class="ok tag">已确认</span>':'<span class="bad tag">未确认</span>'}</p>
+    <p>人设：${esc(c.persona.temperament||"未设置")}</p>
+    <div class="grid">` +
+    Object.entries(c.sheets).flatMap(([sid, s]) =>
+      Object.entries(s.views).map(([v, rel]) => {
+        const cc = s.cell_check?.[v];
+        return `<figure style="${(cc&&!cc.ok)?'border:2px solid #c0392b':''}">
+          <img src="/api/characters/${esc(c.id)}/img?rel=${encodeURIComponent(rel)}" loading="lazy">
+          <figcaption>${esc(v)}${cc?`<br>预期${esc(cc.expected)} / 识别${esc(cc.detected)}`:""}</figcaption>
+        </figure>`;
+      })).join("") + "</div>";
+}
+async function approveChar(){
+  await jpost(`/api/characters/${$("char-list").value}/approve`);
+  loadChar();
+}
+
+// ---------- 漫画册（M20）----------
+let BOOK = {pages: [], idx: 0};
+async function loadBook(){
+  const m = $("book-month").value || localDate().slice(0,7);
+  $("book-month").value = m;
+  const bc = $("book-char").value || "";
+  const cells = await jget(`/api/book?month=${m}${bc ? `&character=${bc}` : ""}`);
+  BOOK.pages = cells.filter(c => c.state === "done");
+  BOOK.cells = cells;
+  $("book-empty").hidden = BOOK.pages.length > 0;
+  drawMoodCurve();
+  const first = new Date(m + "-01").getDay();
+  const heads = ["日","一","二","三","四","五","六"];
+  let html = heads.map(w => `<div style="text-align:center;font-size:12px;color:#888">${w}</div>`).join("");
+  html += "<div></div>".repeat(first);
+  for (const c of cells) {
+    const d = +c.date.slice(8);
+    if (c.state === "done") {
+      const i = BOOK.pages.indexOf(c);
+      const hue = 120 + (c.valence||0)*120;
+      html += `<figure style="margin:0;border:3px solid hsl(${hue},60%,50%);cursor:pointer" onclick="openReader(${i})">
+        <img src="${c.cover}" loading="lazy" style="width:100%;display:block">
+        <figcaption style="font-size:11px;text-align:center">${d}日 ${esc(c.main_emotion)}</figcaption></figure>`;
+    } else if (c.state === "diary_only") {
+      html += `<div style="border:2px dashed var(--line);min-height:90px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#aaa;cursor:pointer" onclick="genOne('${c.date}')" title="有日记，还没生成">
+        <b style="font-size:16px;color:#666">${d}</b><span style="font-size:18px">+</span>
+        <span style="font-size:10px">待生成</span></div>`;
+    } else {
+      html += `<div style="min-height:90px;display:flex;align-items:flex-start;padding:4px;color:#ddd;font-size:11px">${d}</div>`;
+    }
+  }
+  $("book-cal").innerHTML = html;
+  loadOnThisDay();
+}
+async function genOne(date){
+  if (RENDERING) { alert("有任务在跑，稍等"); return; }
+  RENDERING = true;
+  document.querySelector('nav button[data-tab=gen]').click();
+  await loadGenDates(date);   // 漫画册"待生成"跳转过来：日记下拉直接选中这一天
+  const btn = document.querySelector('#tab-gen button.pri');
+  btn.disabled = true; btn.textContent = "生成中…";
+  const r = await jpost(`/api/render/${date}?character=${$("gen-char").value || "xiaomali"}`);
+  watchJob(r.job_id, $("gen-log"), ok => {
+    RENDERING = false; btn.disabled = false; btn.textContent = "开始生成";
+    document.querySelector('nav button[data-tab=book]').click();
+    if (!ok) alert("生成失败，看日志");
+  }, pid => {});
+}
+async function generateAll(){
+  if (RENDERING) { alert("有任务在跑，稍等"); return; }
+  const c = $("gen-char").value || "xiaomali";
+  let r = await jpost(`/api/generate-all?character=${c}`);
+  if (!r.pending) { alert("所有日记都已有漫画，没有要生成的"); return; }
+  if (r.need_confirm &&
+      !confirm(`将生成 ${r.pending} 篇（约 ${r.est_images} 张图，走 dev 池），确定？`))
+    return;
+  r = await jpost(`/api/generate-all?character=${c}&confirm=${r.pending}`);
+  RENDERING = true;
+  const btn = $("gen-all-btn"); btn.disabled = true;
+  watchJob(r.job_id, $("gen-log"), ok => {
+    RENDERING = false; btn.disabled = false;
+    if (ok) loadComicDates();
+    else alert("部分失败，看日志");
+  });
+}
+
+function drawMoodCurve(){
+  const svg = $("mood-svg"); const ps = BOOK.pages; if(!ps.length){svg.innerHTML="";return;}
+  const W = svg.clientWidth||900, H = 90, pad = 18;
+  const days = new Date(+$("book-month").value.slice(0,4),
+                        +$("book-month").value.slice(5), 0).getDate();
+  const x = d => pad + (new Date(+d.slice(0,4), +d.slice(5,7)-1, +d.slice(8)).getDate()-1)/(days-1)*(W-2*pad);
+  const y = v => H/2 - v*(H/2-8);
+  const pts = ps.map(p => `${x(p.date)},${y(p.valence||0)}`).join(" ");
+  const dots = ps.map(p=>`<circle cx="${x(p.date)}" cy="${y(p.valence||0)}" r="4"
+     fill="hsl(${120+(p.valence||0)*120},60%,45%)" style="cursor:pointer"
+     onclick="openReader(${ps.indexOf(p)})"><title>${p.date} ${p.main_emotion}</title></circle>`).join("");
+  svg.innerHTML = `<line x1="${pad}" y1="${H/2}" x2="${W-pad}" y2="${H/2}" stroke="#ccc"/>
+    <polyline points="${pts}" fill="none" stroke="var(--acc)" stroke-width="2"/>${dots}`;
+}
+async function loadOnThisDay(){
+  const today = localDate();
+  try {
+    const hits = await jget(`/api/book/on-this-day?date=${today}${$("book-char").value ? `&character=${$("book-char").value}` : ""}`);
+    $("book-onthisday").innerHTML = hits.length ? hits.map(h =>
+      `<div class="vrow" style="cursor:pointer" onclick="openDay('${h.date}')">
+         <img src="${h.cover}" style="width:90px;border:1px solid var(--line)">
+         <div><b>${esc(h.label)}的今天</b><br><span class="tag">${esc(h.title)}</span>
+         <br><span class="tag">${esc(h.main_emotion)}</span></div></div>`).join("") : "";
+  } catch(e){}
+}
+async function openDay(date){
+  const i = BOOK.pages.findIndex(p=>p.date===date);
+  if (i>=0) openReader(i);
+  else { CUR.date = date; document.querySelector('nav button[data-tab=comic]').click(); loadComicDates(); }
+}
+function openReader(i){ BOOK.idx = i; $("book-reader").hidden = false;
+  const p = BOOK.pages[i];
+  $("reader-date").textContent = p.date; $("reader-title").textContent = p.title;
+  $("reader-img").src = `/api/pages/${p.date}/page.png?character=${$("book-char").value || p.character || ""}&t=${Date.now()}`;
+  $("book-reader").scrollIntoView({behavior:"smooth"});
+}
+function bookPage(d){ const i = BOOK.idx + d;
+  if (0 <= i && i < BOOK.pages.length) openReader(i); }
+function closeReader(){ $("book-reader").hidden = true; }
+document.addEventListener("keydown", e => {
+  if ($("book-reader").hidden) return;
+  if (e.key === "ArrowLeft") bookPage(-1);
+  if (e.key === "ArrowRight") bookPage(1);
+});
+async function exportBookPdf(){
+  const c = $("book-char").value || "";
+  const r = await jpost(`/api/book/${$("book-month").value}/export${c ? `?character=${c}` : ""}`);
+  watchJob(r.job_id, $("gen-log"), ok => { if (ok) alert("PDF 已生成：output/_book/ 下"); });
+}
+
+async function loadUsage(){ loadUsagePill(); const u = await jget("/api/budget");
+  $("usage-table").innerHTML = `<tr><th>池</th><th>生图</th><th>LLM</th><th>质检</th></tr>` +
+    ["prod","dev"].map(p=>`<tr><td>${p}</td><td>${u[p].images}</td><td>${u[p].llm_calls}</td><td>${u[p].vision_calls}</td></tr>`).join("") +
+    `<tr><td colspan=4>prod 剩余 ${u.prod_remaining} 张</td></tr>`;
+}
+async function loadUsagePill(){
+  try { const u = await jget("/api/budget");
+    $("budget-pill").textContent = u.demo_mode
+      ? "🎭 演示模式（mock）"
+      : `prod 剩 ${u.prod_remaining} · dev ${u.dev.images} 张`;
+    if (u.demo_mode) {
+      document.querySelector("header").style.background = "#fff3cd";
+      if (!document.getElementById("demo-banner")) {
+        const b = document.createElement("span");
+        b.id = "demo-banner"; b.className = "tag";
+        b.textContent = "演示模式：生成走 mock";
+        $("budget-pill").after(b);
+        const g = document.querySelector('#tab-gen button.pri');
+        if (g) g.textContent = "生成（演示模式：示意图）";
+        const ga = $("gen-all-btn");
+        if (ga) ga.style.display = "none";   // P1-5：demo 下隐藏一键生成
+      }
+    }
+  } catch(e){}
+}
+
+loadDiaryList(); loadUsagePill(); loadChars();
+</script>
+</body>
+</html>

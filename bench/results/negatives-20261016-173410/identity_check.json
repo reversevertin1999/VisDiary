@@ -1,0 +1,83 @@
+[
+  {
+    "file": "neg_00_换发色.png",
+    "recipe": "换发色",
+    "qc_says_is_her": false,
+    "problems": [
+      "发色 不符"
+    ]
+  },
+  {
+    "file": "neg_01_去掉猫耳.png",
+    "recipe": "去掉猫耳",
+    "qc_says_is_her": false,
+    "problems": [
+      "猫耳 不符"
+    ]
+  },
+  {
+    "file": "neg_02_换瞳色.png",
+    "recipe": "换瞳色",
+    "qc_says_is_her": false,
+    "problems": [
+      "眼睛颜色 不符"
+    ]
+  },
+  {
+    "file": "neg_03_换发型.png",
+    "recipe": "换发型",
+    "qc_says_is_her": false,
+    "problems": [
+      "发型 不符"
+    ]
+  },
+  {
+    "file": "neg_04_换角色.png",
+    "recipe": "换角色",
+    "qc_says_is_her": false,
+    "problems": [
+      "主角不在画面中"
+    ]
+  },
+  {
+    "file": "neg_05_去掉发饰.png",
+    "recipe": "去掉发饰",
+    "qc_says_is_her": false,
+    "problems": [
+      "猫耳 不符",
+      "太阳冠状发饰 不符"
+    ]
+  },
+  {
+    "file": "neg_06_换发色.png",
+    "recipe": "换发色",
+    "qc_says_is_her": false,
+    "problems": [
+      "发色 不符"
+    ]
+  },
+  {
+    "file": "neg_07_去掉猫耳.png",
+    "recipe": "去掉猫耳",
+    "qc_says_is_her": false,
+    "problems": [
+      "猫耳 不符"
+    ]
+  },
+  {
+    "file": "neg_08_换瞳色.png",
+    "recipe": "换瞳色",
+    "qc_says_is_her": false,
+    "problems": [
+      "眼睛颜色 不符"
+    ]
+  },
+  {
+    "file": "neg_09_换发型.png",
+    "recipe": "换发型",
+    "qc_says_is_her": false,
+    "problems": [
+      "发型 不符"
+    ]
+  }
+]

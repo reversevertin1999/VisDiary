@@ -1,0 +1,386 @@
+[
+  {
+    "image": "img-2026-10-16-170031/疲惫_3_近景_v3.png",
+    "target": "疲惫",
+    "user_emotion": "疲惫",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/大笑_1_中景_v3.png",
+    "target": "大笑",
+    "user_emotion": "得意",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/开心_1_中景_v3.png",
+    "target": "开心",
+    "user_emotion": "开心",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/生气_3_中景_v3.png",
+    "target": "生气",
+    "user_emotion": "生气",
+    "user_intensity": 3,
+    "likeness": 4,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/生气_2_中景_v3.png",
+    "target": "生气",
+    "user_emotion": "生气",
+    "user_intensity": 2,
+    "likeness": 4,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/生气_2_近景_v3.png",
+    "target": "生气",
+    "user_emotion": "生气",
+    "user_intensity": 2,
+    "likeness": 4,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/大笑_2_近景_v3.png",
+    "target": "大笑",
+    "user_emotion": "大笑",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/大笑_1_近景_v3.png",
+    "target": "大笑",
+    "user_emotion": "开心",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/惊讶_3_近景_v3.png",
+    "target": "惊讶",
+    "user_emotion": "惊讶",
+    "user_intensity": 3,
+    "likeness": 4,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/开心_3_中景_v3.png",
+    "target": "开心",
+    "user_emotion": "开心",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/疲惫_1_中景_v3.png",
+    "target": "疲惫",
+    "user_emotion": "疲惫",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/哭_2_中景_v3.png",
+    "target": "哭",
+    "user_emotion": "哭",
+    "user_intensity": 2,
+    "likeness": 3,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/开心_2_近景_v3.png",
+    "target": "开心",
+    "user_emotion": "开心",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/崩溃_2_中景_v3.png",
+    "target": "崩溃",
+    "user_emotion": "崩溃",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/疲惫_2_近景_v3.png",
+    "target": "疲惫",
+    "user_emotion": "疲惫",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/生气_1_中景_v3.png",
+    "target": "生气",
+    "user_emotion": "生气",
+    "user_intensity": 2,
+    "likeness": 2,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/崩溃_1_近景_v3.png",
+    "target": "崩溃",
+    "user_emotion": "紧张",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/生气_3_近景_v3.png",
+    "target": "生气",
+    "user_emotion": "生气",
+    "user_intensity": 3,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/难过_1_中景_v3.png",
+    "target": "难过",
+    "user_emotion": "难过",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/开心_1_近景_v3.png",
+    "target": "开心",
+    "user_emotion": "开心",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/崩溃_2_近景_v3.png",
+    "target": "崩溃",
+    "user_emotion": "崩溃",
+    "user_intensity": 3,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/崩溃_3_中景_v3.png",
+    "target": "崩溃",
+    "user_emotion": "崩溃",
+    "user_intensity": 3,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/难过_3_近景_v3.png",
+    "target": "难过",
+    "user_emotion": "难过",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/难过_2_近景_v3.png",
+    "target": "难过",
+    "user_emotion": "难过",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/哭_1_中景_v3.png",
+    "target": "哭",
+    "user_emotion": "难过",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/疲惫_1_近景_v3.png",
+    "target": "疲惫",
+    "user_emotion": "疲惫",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/惊讶_2_近景_v3.png",
+    "target": "惊讶",
+    "user_emotion": "惊讶",
+    "user_intensity": 2,
+    "likeness": 4,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/崩溃_3_近景_v3.png",
+    "target": "崩溃",
+    "user_emotion": "崩溃",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/惊讶_1_中景_v3.png",
+    "target": "惊讶",
+    "user_emotion": "平静",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/难过_1_近景_v3.png",
+    "target": "难过",
+    "user_emotion": "难过",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/疲惫_3_中景_v3.png",
+    "target": "疲惫",
+    "user_emotion": "疲惫",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/哭_3_近景_v3.png",
+    "target": "哭",
+    "user_emotion": "哭",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/惊讶_2_中景_v3.png",
+    "target": "惊讶",
+    "user_emotion": "惊讶",
+    "user_intensity": 2,
+    "likeness": 4,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/大笑_3_中景_v3.png",
+    "target": "大笑",
+    "user_emotion": "大笑",
+    "user_intensity": 3,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/哭_2_近景_v3.png",
+    "target": "哭",
+    "user_emotion": "哭",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/崩溃_1_中景_v3.png",
+    "target": "崩溃",
+    "user_emotion": "紧张",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/开心_3_近景_v3.png",
+    "target": "开心",
+    "user_emotion": "开心",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/惊讶_3_中景_v3.png",
+    "target": "惊讶",
+    "user_emotion": "惊讶",
+    "user_intensity": 3,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/开心_2_中景_v3.png",
+    "target": "开心",
+    "user_emotion": "开心",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/生气_1_近景_v3.png",
+    "target": "生气",
+    "user_emotion": "无语",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/疲惫_2_中景_v3.png",
+    "target": "疲惫",
+    "user_emotion": "疲惫",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/惊讶_1_近景_v3.png",
+    "target": "惊讶",
+    "user_emotion": "平静",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/大笑_2_中景_v3.png",
+    "target": "大笑",
+    "user_emotion": "大笑",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/难过_2_中景_v3.png",
+    "target": "难过",
+    "user_emotion": "难过",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/大笑_3_近景_v3.png",
+    "target": "大笑",
+    "user_emotion": "大笑",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/哭_1_近景_v3.png",
+    "target": "哭",
+    "user_emotion": "哭",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/难过_3_中景_v3.png",
+    "target": "难过",
+    "user_emotion": "难过",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  },
+  {
+    "image": "img-2026-10-16-170031/哭_3_中景_v3.png",
+    "target": "哭",
+    "user_emotion": "哭",
+    "user_intensity": 2,
+    "likeness": 5,
+    "identity_ok": true
+  }
+]

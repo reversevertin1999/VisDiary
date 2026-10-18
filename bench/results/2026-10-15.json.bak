@@ -1,0 +1,470 @@
+{
+  "date": "2026-10-15",
+  "character": "xiaomali",
+  "provider": "codex",
+  "summary": {
+    "v3": {
+      "panels": 16,
+      "category_hit_rate": 1.0,
+      "intensity_hit_rate": 0.812,
+      "overacted_rate": 0.0,
+      "identity_pass_rate": 0.938,
+      "face_sizes": {
+        "large": 16,
+        "medium": 0,
+        "small": 0,
+        "not_visible": 0
+      }
+    }
+  },
+  "cells": [
+    {
+      "emotion": "开心",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-img-2026-10-15/开心_2_近景_v3.png",
+      "duration_s": 107.6,
+      "identity_pass": true,
+      "expression_pass": true,
+      "expression_fail": null,
+      "detected": {
+        "detected_emotion": "开心",
+        "detected_top2": [
+          "开心",
+          "期待"
+        ],
+        "detected_intensity": 2,
+        "face_size": "large",
+        "head_bbox": [
+          0.076,
+          0.073,
+          0.793,
+          0.598
+        ],
+        "note": "张口微笑，双颊泛红，双手在胸前合握；开心最明显，也有期待感。头部框包含猫耳及头部主体发型，不含后方黄色装饰与垂落长发。"
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is smiling (clearly visible).\n  face: clear smile showing teeth a bit, eyes curved upward, rosy cheeks\n  body: hands clasped together near the chest, leaning forward slightly\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, expressive manga acting, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "开心",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-img-2026-10-15/开心_3_近景_v3.png",
+      "duration_s": 107.8,
+      "identity_pass": true,
+      "expression_pass": true,
+      "expression_fail": null,
+      "detected": {
+        "detected_emotion": "大笑",
+        "detected_top2": [
+          "大笑",
+          "开心"
+        ],
+        "detected_intensity": 3,
+        "face_size": "large",
+        "head_bbox": [
+          0.09,
+          0.0,
+          0.8,
+          0.65
+        ],
+        "note": "双眼笑眯闭合，嘴巴大张，双拳举在脸旁，喜悦表现夸张。头部框包含猫耳和顶部装饰，不含向下延伸的长发。"
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is smiling (exaggerated manga-style, over-the-top).\n  face: beaming grin, eyes turned into happy crescents, huge smile wrinkles\n  body: both fists pumped up beside the cheeks, radiant grin\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, expressive manga acting, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "大笑",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-img-2026-10-15/大笑_2_近景_v3.png",
+      "duration_s": 98.7,
+      "identity_pass": true,
+      "expression_pass": true,
+      "expression_fail": null,
+      "detected": {
+        "detected_emotion": "大笑",
+        "detected_top2": [
+          "大笑",
+          "开心"
+        ],
+        "detected_intensity": 2,
+        "face_size": "large",
+        "head_bbox": [
+          0.16,
+          0.05,
+          0.77,
+          0.61
+        ],
+        "note": "双眼笑眯闭合，嘴巴明显张开，脸颊泛红，头略后仰。"
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is laughing (clearly visible).\n  face: wide open laughing mouth, eyes squeezed shut into arcs, head tilted back\n  body: head tilted back laughing, one hand on the chest\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, expressive manga acting, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "大笑",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-img-2026-10-15/大笑_3_近景_v3.png",
+      "duration_s": 102.7,
+      "identity_pass": true,
+      "expression_pass": true,
+      "expression_fail": null,
+      "detected": {
+        "detected_emotion": "大笑",
+        "detected_top2": [
+          "大笑",
+          "开心"
+        ],
+        "detected_intensity": 3,
+        "face_size": "large",
+        "head_bbox": [
+          0.13,
+          0.0,
+          0.76,
+          0.56
+        ],
+        "note": "闭眼、张大嘴，眼角带泪，配合拍桌和晃动线，呈夸张大笑。头框包含猫耳及头顶装饰，不含向下垂落的长发。"
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is laughing (exaggerated manga-style, over-the-top).\n  face: uncontrollable laughter, tears of laughter in the corners of tightly shut eyes, mouth wide open\n  body: laughing so hard the shoulders bounce, one hand slapping the table\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, expressive manga acting, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "生气",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-img-2026-10-15/生气_2_近景_v3.png",
+      "duration_s": 108.4,
+      "identity_pass": true,
+      "expression_pass": true,
+      "expression_fail": null,
+      "detected": {
+        "detected_emotion": "生气",
+        "detected_top2": [
+          "生气",
+          "坚定"
+        ],
+        "detected_intensity": 2,
+        "face_size": "large",
+        "head_bbox": [
+          0.03,
+          0.06,
+          0.89,
+          0.65
+        ],
+        "note": "眉头向内压低，双眼怒视，嘴角下撇，双手叉腰，额侧有红色怒气符号；未见张嘴咆哮等更夸张表现。头部框包含猫耳及主要头发，不含后方太阳状装饰和向下延伸的长发。"
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is angry (clearly visible).\n  face: clear frown, eyebrows slanted down, puffed angry cheeks, narrowed glaring eyes\n  body: hands on hips, leaning forward with a glare\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, expressive manga acting, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "生气",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-img-2026-10-15/生气_3_近景_v3.png",
+      "duration_s": 100.3,
+      "identity_pass": true,
+      "expression_pass": true,
+      "expression_fail": null,
+      "detected": {
+        "detected_emotion": "生气",
+        "detected_top2": [
+          "生气",
+          "暴怒"
+        ],
+        "detected_intensity": 3,
+        "face_size": "large",
+        "head_bbox": [
+          0.07,
+          0.0,
+          0.8,
+          0.7
+        ],
+        "note": "眉头紧锁、双眼怒视、咬牙并握拳，配有红色怒气符号，情绪表现夸张。头框包含刘海、猫耳和头顶装饰，不包含向下垂落的长发。"
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is angry (exaggerated manga-style, over-the-top).\n  face: furious scowl, sharply slanted eyebrows, gritted teeth, red face\n  body: fist clenched tight and raised to the chest, glaring\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, expressive manga acting, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "难过",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-img-2026-10-15/难过_2_近景_v3.png",
+      "duration_s": 92.5,
+      "identity_pass": true,
+      "expression_pass": true,
+      "expression_fail": null,
+      "detected": {
+        "detected_emotion": "难过",
+        "detected_top2": [
+          "难过",
+          "委屈"
+        ],
+        "detected_intensity": 2,
+        "face_size": "large",
+        "head_bbox": [
+          0.06,
+          0.0,
+          0.81,
+          0.67
+        ],
+        "note": "眉毛内侧抬起，双眼含泪，嘴部小而下弯，呈明显难过、委屈的神态。"
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is sad (clearly visible).\n  face: eyebrows knitted upward, glossy eyes, trembling closed mouth\n  body: one hand pressed flat on the chest, head lowered\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, expressive manga acting, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "难过",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-img-2026-10-15/难过_3_近景_v3.png",
+      "duration_s": 115.0,
+      "identity_pass": true,
+      "expression_pass": true,
+      "expression_fail": null,
+      "detected": {
+        "detected_emotion": "委屈",
+        "detected_top2": [
+          "委屈",
+          "难过"
+        ],
+        "detected_intensity": 2,
+        "face_size": "large",
+        "head_bbox": [
+          0.05,
+          0.04,
+          0.82,
+          0.62
+        ],
+        "note": "眉头内侧抬起，下眼睑积泪，嘴角下压且呈波浪状，配合抱臂姿势，委屈和难过感明显。"
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is sad (exaggerated manga-style, over-the-top).\n  face: eyes brimming with tears about to fall, quivering lips, deep frown\n  body: face half lowered, one arm wrapped around the shoulders\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, expressive manga acting, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "哭",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-img-2026-10-15/哭_2_近景_v3.png",
+      "duration_s": 129.4,
+      "identity_pass": true,
+      "expression_pass": true,
+      "expression_fail": null,
+      "detected": {
+        "detected_emotion": "大哭",
+        "detected_top2": [
+          "大哭",
+          "哭"
+        ],
+        "detected_intensity": 3,
+        "face_size": "large",
+        "head_bbox": [
+          0.07,
+          0.0,
+          0.83,
+          0.71
+        ],
+        "note": "双眼涌出夸张的连续泪流，眉毛下撇，嘴巴张开呈波浪状，双手攥在嘴边。"
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is crying with tears (clearly visible).\n  face: tears streaming down both cheeks, red-rimmed eyes, mouth open in a sob\n  body: both hands covering the mouth, tears streaming\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, expressive manga acting, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "哭",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-img-2026-10-15/哭_3_近景_v3.png",
+      "duration_s": 107.5,
+      "identity_pass": true,
+      "expression_pass": true,
+      "expression_fail": null,
+      "detected": {
+        "detected_emotion": "大哭",
+        "detected_top2": [
+          "大哭",
+          "哭"
+        ],
+        "detected_intensity": 3,
+        "face_size": "large",
+        "head_bbox": [
+          0.04,
+          0.05,
+          0.85,
+          0.65
+        ],
+        "note": "眉头抬起，双眼眯起，张嘴哭喊；双手贴近眼睛，大量泪水沿脸和手流下。"
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is crying with tears (exaggerated manga-style, over-the-top).\n  face: flooding tears, eyes red and swollen, mouth wide open crying loudly\n  body: face buried in both hands, tears slipping through fingers\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, expressive manga acting, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "惊讶",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-img-2026-10-15/惊讶_2_近景_v3.png",
+      "duration_s": 102.4,
+      "identity_pass": true,
+      "expression_pass": true,
+      "expression_fail": null,
+      "detected": {
+        "detected_emotion": "惊讶",
+        "detected_top2": [
+          "惊讶",
+          "震惊"
+        ],
+        "detected_intensity": 2,
+        "face_size": "large",
+        "head_bbox": [
+          0.12,
+          0.01,
+          0.8,
+          0.69
+        ],
+        "note": "双眼睁圆、嘴张成O形，一只手抬至嘴边，呈明显惊讶。头框包含猫耳与冠饰，不含向下延伸的长发。"
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is surprised (clearly visible).\n  face: wide round eyes, raised eyebrows, mouth open in an O shape\n  body: one hand near the open mouth, leaning back\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, expressive manga acting, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "惊讶",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-img-2026-10-15/惊讶_3_近景_v3.png",
+      "duration_s": 104.4,
+      "identity_pass": true,
+      "expression_pass": true,
+      "expression_fail": null,
+      "detected": {
+        "detected_emotion": "震惊",
+        "detected_top2": [
+          "震惊",
+          "惊讶"
+        ],
+        "detected_intensity": 3,
+        "face_size": "large",
+        "head_bbox": [
+          0.07,
+          0.0,
+          0.82,
+          0.73
+        ],
+        "note": "双眼瞪大、眉毛抬起、嘴巴大张，双手贴脸，周围配有放射状强调线。"
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is surprised (exaggerated manga-style, over-the-top).\n  face: huge bulging eyes, jaw dropped wide open, eyebrows shot up high\n  body: both hands on the cheeks, jaw dropped\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, expressive manga acting, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "疲惫",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-img-2026-10-15/疲惫_2_近景_v3.png",
+      "duration_s": 86.3,
+      "identity_pass": true,
+      "expression_pass": true,
+      "expression_fail": null,
+      "detected": {
+        "detected_emotion": "疲惫",
+        "detected_top2": [
+          "疲惫",
+          "平静"
+        ],
+        "detected_intensity": 2,
+        "face_size": "large",
+        "head_bbox": [
+          0.06,
+          0.08,
+          0.8,
+          0.6
+        ],
+        "note": "眼睑半垂、眼下阴影明显，托腮并张嘴似在打哈欠。头框包含猫耳和刘海，不含后方黄色装饰及长发末端。"
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is exhausted (clearly visible).\n  face: heavy-lidded eyes with bags under them, yawning mouth, listless expression\n  body: cheek resting on one hand, yawning\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, expressive manga acting, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "疲惫",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-img-2026-10-15/疲惫_3_近景_v3.png",
+      "duration_s": 118.0,
+      "identity_pass": false,
+      "expression_pass": true,
+      "expression_fail": null,
+      "detected": {
+        "detected_emotion": "疲惫",
+        "detected_top2": [
+          "疲惫",
+          "崩溃"
+        ],
+        "detected_intensity": 3,
+        "face_size": "large",
+        "head_bbox": [
+          0.12,
+          0.01,
+          0.73,
+          0.62
+        ],
+        "note": "半垂眼伴明显眼下阴影，张口流涎、趴伏，配有灵魂飘出般的夸张符号。头框包含猫耳及黄色头饰，不含向下延伸的长发。"
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is exhausted (exaggerated manga-style, over-the-top).\n  face: completely drained, dead fish eyes, mouth hanging open, soul nearly leaving\n  body: chin resting on the desk, dead fish eyes, arms hanging limp\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, expressive manga acting, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "崩溃",
+      "intensity": 2,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-img-2026-10-15/崩溃_2_近景_v3.png",
+      "duration_s": 100.6,
+      "identity_pass": true,
+      "expression_pass": true,
+      "expression_fail": null,
+      "detected": {
+        "detected_emotion": "崩溃",
+        "detected_top2": [
+          "崩溃",
+          "震惊"
+        ],
+        "detected_intensity": 3,
+        "face_size": "large",
+        "head_bbox": [
+          0.035,
+          0.0,
+          0.845,
+          0.71
+        ],
+        "note": "双手抓头，双眼瞪大、瞳孔缩小，额头至眼部有蓝紫色阴影和竖线，嘴巴张大且轮廓颤抖。头部框包含猫耳及顶部装饰，不含向下延伸的长发。"
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is devastated (clearly visible).\n  face: hollow despairing eyes, mouth open in a silent wail, face pale with gloom lines\n  body: both hands clutching the head, hollow eyes\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, expressive manga acting, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    },
+    {
+      "emotion": "崩溃",
+      "intensity": 3,
+      "shot": "近景",
+      "version": "v3",
+      "image": "img-img-2026-10-15/崩溃_3_近景_v3.png",
+      "duration_s": 103.8,
+      "identity_pass": true,
+      "expression_pass": true,
+      "expression_fail": null,
+      "detected": {
+        "detected_emotion": "崩溃",
+        "detected_top2": [
+          "崩溃",
+          "震惊"
+        ],
+        "detected_intensity": 3,
+        "face_size": "large",
+        "head_bbox": [
+          0.07,
+          0.09,
+          0.8,
+          0.61
+        ],
+        "note": "双手抓头、双眼空白、额面蓝紫色竖线阴影，嘴巴大张且轮廓颤曲，呈强烈失控和惊愕感。头框包含猫耳与主要头部轮廓，不含后方冠饰及垂落长发末端。"
+      },
+      "prompt": "anime style, cel shading, clean lineart, flat colors, vibrant.\nACTING (most important): 小玛丽 is devastated (exaggerated manga-style, over-the-top).\n  face: blank white eyes, mouth open in a wail, face pale with vertical gloom lines\n  body: both hands clutching the head, elbows on the desk, wailing silently\nmedium close-up, chest up.\nan ordinary daily indoor scene\nCHARACTER IDENTITY: 浅橙金色到蜜桃金色的长发; 厚重齐刘海，脸侧有长发束，右侧可见长直发向下延伸; 头顶有浅橙色三角猫耳状结构，棕色描边; 浅蓝色大眼，眼内有白色高光; 半垂的大眼，眼尾略上挑，表情显得困倦或呆萌; Q版大头小身比例，脸颊圆润; 小点状鼻子，淡粉色腮红; 头后方露出黄色尖角冠状或太阳状装饰; 深棕色粗描边，整体线条柔软圆润. wearing 可见部分为浅粉色上衣或连衣裙，白色荷叶边领口，颈前有粉色蝴蝶结系带；右肩与上半身只露出局部。.\nsingle comic panel illustration, expressive manga acting, no text, no speech bubbles, no captions, no watermark, no panel border.\nThe reference images show the character's identity: keep hair style and color, eye color, face shape and accessories consistent. The expression must follow ACTING, not the reference."
+    }
+  ]
+}

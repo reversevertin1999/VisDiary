@@ -1,0 +1,77 @@
+{
+  "character": "xiaomali",
+  "run": "20261016-173410",
+  "count": 10,
+  "files": [
+    {
+      "file": "neg_00_换发色.png",
+      "recipe": "换发色",
+      "tweak": "hair color changed to jet black",
+      "sha256": "b1fec5299b3de6e6",
+      "target": "开心"
+    },
+    {
+      "file": "neg_01_去掉猫耳.png",
+      "recipe": "去掉猫耳",
+      "tweak": "no cat ears on the head, plain hair",
+      "sha256": "cbc09f10fe4711c7",
+      "target": "难过"
+    },
+    {
+      "file": "neg_02_换瞳色.png",
+      "recipe": "换瞳色",
+      "tweak": "eye color changed to golden",
+      "sha256": "cbe2b697cdc2a2ad",
+      "target": "生气"
+    },
+    {
+      "file": "neg_03_换发型.png",
+      "recipe": "换发型",
+      "tweak": "hair styled into a short bob instead of long hair",
+      "sha256": "d0e810c71a4648bd",
+      "target": "惊讶"
+    },
+    {
+      "file": "neg_04_换角色.png",
+      "recipe": "换角色",
+      "tweak": "a completely different anime schoolgirl, silver short hair, green eyes",
+      "sha256": "7661f56b084d5d17",
+      "target": "开心"
+    },
+    {
+      "file": "neg_05_去掉发饰.png",
+      "recipe": "去掉发饰",
+      "tweak": "no hair accessory or head decoration",
+      "sha256": "9446967df1a57ea6",
+      "target": "难过"
+    },
+    {
+      "file": "neg_06_换发色.png",
+      "recipe": "换发色",
+      "tweak": "hair color changed to platinum blonde",
+      "sha256": "60537924b831f2ce",
+      "target": "生气"
+    },
+    {
+      "file": "neg_07_去掉猫耳.png",
+      "recipe": "去掉猫耳",
+      "tweak": "no cat ears on the head, plain hair",
+      "sha256": "2b919746e28e84e6",
+      "target": "惊讶"
+    },
+    {
+      "file": "neg_08_换瞳色.png",
+      "recipe": "换瞳色",
+      "tweak": "eye color changed to golden",
+      "sha256": "42643e5274698077",
+      "target": "开心"
+    },
+    {
+      "file": "neg_09_换发型.png",
+      "recipe": "换发型",
+      "tweak": "hair styled into a short bob instead of long hair",
+      "sha256": "fcd812be2dd2ce9f",
+      "target": "难过"
+    }
+  ]
+}
