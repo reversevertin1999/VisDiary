@@ -19,5 +19,10 @@ bench/results/img-*/
 项目说明.md
 项目说明.pdf
 README.pdf
+VisDiary_技术文档与第三方资源说明.md
+VisDiary_技术文档与第三方资源说明.pdf
+VisDiary_技术文档与第三方资源说明_tmp.html
 _slides/
-_video/
+# 录屏目录不入库，但 demo 视频入库
+_video/*
+!_video/VisDiary_demo.mp4
