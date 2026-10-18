@@ -15,3 +15,7 @@ bench/*/
 !bench/results/
 # 基准结果里的图片除外
 bench/results/img-*/
+# 本机演示材料：比赛项目说明、slides、录屏不入库
+项目说明.md
+_slides/
+_video/
